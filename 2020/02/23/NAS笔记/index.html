@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"danfei.github.io","root":"/","images":"/images","scheme":"Mist","version":"8.1.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+  </script>
+<meta name="description" content="硬件选择工作NAS选择选择群晖主要是为了易用和稳定，毕竟是用来备份资料的设备个人认为群晖适合家用的两个型号:两盘位的DS218+和四盘位的DS918+plus系列最大特点是支持Docker，这个很重要需要体积小巧就选前者，需要海量存储就选择后者我购买的是DS218+ 加装内存为了更好地使用Docker，务必选择加装内存，当然过大也没啥用注意是低电压版本的DDR3L 1866的内存我购买的是8GB容">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NAS笔记">
+<meta property="og:url" content="http://danfei.github.io/2020/02/23/NAS%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="填坑笔记">
+<meta property="og:description" content="硬件选择工作NAS选择选择群晖主要是为了易用和稳定，毕竟是用来备份资料的设备个人认为群晖适合家用的两个型号:两盘位的DS218+和四盘位的DS918+plus系列最大特点是支持Docker，这个很重要需要体积小巧就选前者，需要海量存储就选择后者我购买的是DS218+ 加装内存为了更好地使用Docker，务必选择加装内存，当然过大也没啥用注意是低电压版本的DDR3L 1866的内存我购买的是8GB容">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-23T02:22:15.000Z">
+<meta property="article:modified_time" content="2020-03-04T08:01:21.000Z">
+<meta property="article:author" content="danfei">
+<meta property="article:tag" content="synology">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://danfei.github.io/2020/02/23/NAS%E7%AC%94%E8%AE%B0/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>NAS笔记 | 填坑笔记</title>
+  
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="填坑笔记" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">填坑笔记</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A1%AC%E4%BB%B6%E9%80%89%E6%8B%A9%E5%B7%A5%E4%BD%9C"><span class="nav-number">1.</span> <span class="nav-text">硬件选择工作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#NAS%E9%80%89%E6%8B%A9"><span class="nav-number">1.1.</span> <span class="nav-text">NAS选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%A0%E8%A3%85%E5%86%85%E5%AD%98"><span class="nav-number">1.2.</span> <span class="nav-text">加装内存</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A1%AC%E7%9B%98%E9%80%89%E6%8B%A9"><span class="nav-number">1.3.</span> <span class="nav-text">硬盘选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UPS%E9%80%89%E6%8B%A9"><span class="nav-number">1.4.</span> <span class="nav-text">UPS选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87"><span class="nav-number">1.5.</span> <span class="nav-text">其他设备</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E9%80%89%E6%8B%A9"><span class="nav-number">2.</span> <span class="nav-text">软件选择</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%85%A7%E7%89%87%E5%A4%87%E4%BB%BD"><span class="nav-number">2.1.</span> <span class="nav-text">照片备份</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BD%B1%E9%9F%B3%E4%B8%8B%E8%BD%BD"><span class="nav-number">2.2.</span> <span class="nav-text">影音下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AA%92%E4%BD%93%E4%B8%AD%E5%BF%83"><span class="nav-number">2.3.</span> <span class="nav-text">媒体中心</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Docker"><span class="nav-number">2.4.</span> <span class="nav-text">Docker</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Virtual-Machine-Manager"><span class="nav-number">2.5.</span> <span class="nav-text">Virtual Machine Manager</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%8C%E6%AD%A5%E4%B8%8E%E5%A4%87%E4%BB%BD"><span class="nav-number">2.6.</span> <span class="nav-text">同步与备份</span></a></li></ol></li></ol></div>
+        </section>
+        <!--/noindex-->
+
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="danfei"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">danfei</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">29</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/danfei" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;danfei" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:hack42@qq.com" title="E-Mail → mailto:hack42@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+
+
+
+        </section>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://danfei.github.io/2020/02/23/NAS%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="danfei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="填坑笔记">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          NAS笔记
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-02-23 10:22:15" itemprop="dateCreated datePublished" datetime="2020-02-23T10:22:15+08:00">2020-02-23</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-04 16:01:21" itemprop="dateModified" datetime="2020-03-04T16:01:21+08:00">2020-03-04</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="硬件选择工作"><a href="#硬件选择工作" class="headerlink" title="硬件选择工作"></a>硬件选择工作</h1><h2 id="NAS选择"><a href="#NAS选择" class="headerlink" title="NAS选择"></a>NAS选择</h2><p>选择群晖主要是为了易用和稳定，毕竟是用来备份资料的设备<br>个人认为群晖适合家用的两个型号:两盘位的<code>DS218+</code>和四盘位的<code>DS918+</code><br>plus系列最大特点是支持Docker，这个很重要<br>需要体积小巧就选前者，需要海量存储就选择后者<br>我购买的是DS218+</p>
+<h2 id="加装内存"><a href="#加装内存" class="headerlink" title="加装内存"></a>加装内存</h2><p>为了更好地使用Docker，务必选择加装内存，当然过大也没啥用<br>注意是低电压版本的<code>DDR3L 1866</code>的内存<br>我购买的是8GB容量</p>
+<h2 id="硬盘选择"><a href="#硬盘选择" class="headerlink" title="硬盘选择"></a>硬盘选择</h2><p>硬盘有NAS专用盘<br>容量方面可以参考单位容量单价比较<br>即用该<code>硬盘总价/硬盘容量</code><br>可以做出性价比不错的选择<br>我购买的是希捷的4TB*2</p>
+<h2 id="UPS选择"><a href="#UPS选择" class="headerlink" title="UPS选择"></a>UPS选择</h2><p>虽然有各类保护，但突然掉电对硬盘还是有一定影响<br>购买UPS可以避免这一点<br>小型的UPS不占地方，大约能提供几十分钟的电力支援<br>我购买的是<code>APC施耐德BK650-CH(400W/650VA)</code></p>
+<h2 id="其他设备"><a href="#其他设备" class="headerlink" title="其他设备"></a>其他设备</h2><ul>
+<li>配合电视机，可以购买支持DLNA播放的视频盒子，Apple TV、小米盒子或者Raspberry Pi刷了OSMC都可以</li>
+<li>尽管群晖也可以来做软路由，我还是倾向于有一块OpenWrt无线路由，ASUS RT-AC88U之类</li>
+<li>可以买99元的花生棒做内网穿透，便于更灵活的使用</li>
+<li>防尘问题可以将机器拆开，在风扇处加装防尘网，并把风扇反置</li>
+</ul>
+<h1 id="软件选择"><a href="#软件选择" class="headerlink" title="软件选择"></a>软件选择</h1><h2 id="照片备份"><a href="#照片备份" class="headerlink" title="照片备份"></a>照片备份</h2><p>套件中心中启用<code>Moments</code>，手机上安装Moments APP<br>家中每人可以用各自的帐号备份自己设备的照片<br>同时将部分照片共享出来，建立共享照片库</p>
+<h2 id="影音下载"><a href="#影音下载" class="headerlink" title="影音下载"></a>影音下载</h2><p>在Docker中注册表搜索<code>oldiy/rrshare64</code><br>把映像建立容器，配置下载路径后即可使用<br>它提供海量的人人影视翻译的视频下载，不用到处找资源</p>
+<h2 id="媒体中心"><a href="#媒体中心" class="headerlink" title="媒体中心"></a>媒体中心</h2><p>套件中心中启用<code>Plex Media Server</code><br>下载后的视频移动到对应目录就可以自动扫描出影片信息<br>注意放置的位置<br>电影<br><code>/Media/Movies/Apollo.11/Apollo.11.mp4</code><br>电视剧<br><code>/Media/TV Shows/Better.Call.Saul/Season 01/Better.Call.Saul.S01E01.mp4</code><br>移动端推荐使用Plex APP或是VLC APP<br>电视机连接媒体盒子后，可以直接搜索出DLNA设备播放</p>
+<h2 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h2><p>在Docker Hub海量资源有很多可以探索的<br>我使用<code>linuxserver/minetest</code>搭建了minetest游戏服务器<br>配合路由上的frps做内网穿透，让我社区的朋友可以一起游玩<br>因为负载不大，所以还算流畅</p>
+<h2 id="Virtual-Machine-Manager"><a href="#Virtual-Machine-Manager" class="headerlink" title="Virtual Machine Manager"></a>Virtual Machine Manager</h2><p>在<code>Virtual Machine Manager</code>可以创建需要的虚拟机<br>我在上面建立过魔兽世界3.3.5版本的<code>TrinityCore</code>服务器，但是在线三个人就开始卡顿<br>如果服务器性能再强一些，支持五人在线游戏就不错</p>
+<h2 id="同步与备份"><a href="#同步与备份" class="headerlink" title="同步与备份"></a>同步与备份</h2><p>安装<code>Synology Drive</code>的客户端来同步PC上的文件到服务器<br>使用<code>Snapshot Replication</code>来建立备份快照<br>如果你有两台群晖，或者花了300元买到了星际蜗牛<br>你还可以运行<code>Hyper Backup</code>做异地备份，充分保护你的数据安全</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/synology/" rel="tag"># synology</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020/02/22/Hexo%E7%AC%94%E8%AE%B0/" rel="prev" title="Hexo笔记">
+                  <i class="fa fa-chevron-left"></i> Hexo笔记
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2020/02/24/frp%E7%AC%94%E8%AE%B0/" rel="next" title="frp笔记">
+                  frp笔记 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2016 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class=""></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">danfei</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+</body>
+</html>

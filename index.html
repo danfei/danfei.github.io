@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"danfei.github.io","root":"/","images":"/images","scheme":"Mist","version":"8.1.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+  </script>
+<meta property="og:type" content="website">
+<meta property="og:title" content="填坑笔记">
+<meta property="og:url" content="http://danfei.github.io/index.html">
+<meta property="og:site_name" content="填坑笔记">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="danfei">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://danfei.github.io/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>填坑笔记</title>
+  
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="填坑笔记" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">填坑笔记</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+        </section>
+        <!--/noindex-->
+
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="danfei"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">danfei</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">29</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/danfei" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;danfei" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:hack42@qq.com" title="E-Mail → mailto:hack42@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+
+
+
+        </section>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://danfei.github.io/2020/05/30/ESP8266%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="danfei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="填坑笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/05/30/ESP8266%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">ESP8266笔记</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2020-05-30 11:57:00 / 修改时间：11:58:31" itemprop="dateCreated datePublished" datetime="2020-05-30T11:57:00+08:00">2020-05-30</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="INTERRUPT问题"><a href="#INTERRUPT问题" class="headerlink" title="INTERRUPT问题"></a>INTERRUPT问题</h1><p>提示’ISR NOT IN IRAM!’<br>添加<br>‘void ICACHE_RAM_ATTR handleInterrupt()’<br>at the top.</p>
+<blockquote>
+<p>参考<br><a target="_blank" rel="noopener" href="https://www.esp8266.com/viewtopic.php?t=20118">https://www.esp8266.com/viewtopic.php?t=20118</a></p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://danfei.github.io/2020/03/19/InfluxDB%E5%92%8CGrafana%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="danfei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="填坑笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/03/19/InfluxDB%E5%92%8CGrafana%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">InfluxDB和Grafana使用笔记</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-03-19 21:19:16" itemprop="dateCreated datePublished" datetime="2020-03-19T21:19:16+08:00">2020-03-19</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-20 00:11:46" itemprop="dateModified" datetime="2020-03-20T00:11:46+08:00">2020-03-20</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>HomeAssistant自带的数据库是SQLite<br>可能我加入的十几个传感器采样速度过快，没几天<code>home-assistant_v2.db</code>就400多M了<br>回看历史数据的速度惨不忍睹，经过一番调研决定更换时序型的数据库InfluxDB<br>同时自带的图表实在太简陋，也更换了Grafana</p>
+<h1 id="InfluxDB"><a href="#InfluxDB" class="headerlink" title="InfluxDB"></a>InfluxDB</h1><p>在群晖Docker的注册表里搜索并下载<code>influxdb</code><br>在<code>高级设置</code>里勾选<code>启动自动重新启动</code><br>在<code>卷</code>里设置<code>/docker/influxdb</code>映射装载路径<code>/var/lib/influxdb</code><br>在<code>网络</code>里勾选<code>使用与Docker Host相同的网络</code><br>在控制台启动<code>bash</code>，运行<code>influxdb</code><br>创建数据库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CREATE DATABASE home_assistant</span><br></pre></td></tr></table></figure>
+<p>修改<code>configuration.yaml</code>增加如下内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">influxdb:</span><br><span class="line">    host: 127.0.0.1</span><br></pre></td></tr></table></figure>
+<p>重启服务<br>至此，HomeAssistant数据库切换成功</p>
+<h1 id="Grafana"><a href="#Grafana" class="headerlink" title="Grafana"></a>Grafana</h1><p>在群晖Docker的注册表里搜索并下载<code>grafana/grafana</code><br>在<code>高级设置</code>里勾选<code>启动自动重新启动</code><br>在<code>卷</code>里设置<code>/docker/grafana</code>映射装载路径<code>/var/lib/grafana</code><br>在<code>网络</code>里勾选<code>使用与Docker Host相同的网络</code><br>注意如果启动失败，可以为文件夹添加权限<br>访问<code>http://群晖IP:3000</code>，用户名密码均为<code>admin</code><br>添加数据源，类型选择<code>InfluxDB</code><br>设置里URL填写<code>http://127.0.0.1:8086</code><br>数据库名称<code>home_assistant</code><br>点击<code>Save &amp; Test</code>，出现<code>Data source is working</code>即可<br>在Dashboard里<br>选择Query的数据库，修改第一行为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">From ppm WHERE entity_id &#x3D; mb_co2</span><br></pre></td></tr></table></figure>
+<p>即可连接数据库，绘制出而二氧化碳的数值曲线<br>可添加多条Query语句<br>最后保存Dashboard</p>
+<blockquote>
+<p>引用<br><a target="_blank" rel="noopener" href="https://registry.hub.docker.com/_/influxdb/">https://registry.hub.docker.com/_/influxdb/</a><br><a target="_blank" rel="noopener" href="https://registry.hub.docker.com/r/grafana/grafana">https://registry.hub.docker.com/r/grafana/grafana</a><br><a target="_blank" rel="noopener" href="https://bbs.hassbian.com/thread-4185-1-1.html">https://bbs.hassbian.com/thread-4185-1-1.html</a><br><a target="_blank" rel="noopener" href="https://blog.yxwang.me/2017/10/smart-home-2/">https://blog.yxwang.me/2017/10/smart-home-2/</a></p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://danfei.github.io/2020/03/18/%E7%9B%96%E9%9D%A9%E8%AE%A1%E6%95%B0%E5%99%A8%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="danfei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="填坑笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/03/18/%E7%9B%96%E9%9D%A9%E8%AE%A1%E6%95%B0%E5%99%A8%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">盖革计数器笔记</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2020-03-18 01:02:08 / 修改时间：01:43:13" itemprop="dateCreated datePublished" datetime="2020-03-18T01:02:08+08:00">2020-03-18</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="硬件"><a href="#硬件" class="headerlink" title="硬件"></a>硬件</h1><p>看了HBO的《切尔诺贝利》之后，觉得是时候重新填坑了<br>把前两年买的盖格计数器翻出来<a target="_blank" rel="noopener" href="https://github.com/SensorsIot/Geiger-Counter-RadiationD-v1.1-CAJOE-/">Geiger-Counter-RadiationD-v1.1-CAJOE</a><br>它和NodeMCU连接如下</p>
+<table>
+<thead>
+<tr>
+<th>NodeMCU</th>
+<th>geiger(p3)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Vin(5V)</td>
+<td>5V</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>D2(IO4)</td>
+<td>VIN</td>
+</tr>
+</tbody></table>
+<p>加了块OLED显示器，连接如下</p>
+<table>
+<thead>
+<tr>
+<th>NodeMCU</th>
+<th>OLED</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>3V3</td>
+<td>3V3</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>D4(IO2)</td>
+<td>SCL</td>
+</tr>
+<tr>
+<td>D3(IO0)</td>
+<td>SDA</td>
+</tr>
+</tbody></table>
+<h1 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h1><p>程序如下</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;ESP8266WiFi.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;Thread.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;SoftwareSerial.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;PubSubClient.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;ArduinoJson.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;Adafruit_GFX.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;Adafruit_SSD1306.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;Wire.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> OLED_RESET 5</span></span><br><span class="line"><span class="function">Adafruit_SSD1306 <span class="title">display</span><span class="params">(OLED_RESET)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Update these with values suitable for your network.</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span>* ssid = <span class="string">&quot;xxxxx&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span>* password = <span class="string">&quot;xxxxx&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span>* mqtt_server = <span class="string">&quot;192.168.1.110&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span>* clientID = <span class="string">&quot;espgeiger&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span>* mqtt_topic = <span class="string">&quot;Home/Global&quot;</span>;</span><br><span class="line"></span><br><span class="line">WiFiClient espClient;</span><br><span class="line"><span class="function">PubSubClient <span class="title">client</span><span class="params">(espClient)</span></span>;</span><br><span class="line"></span><br><span class="line">Thread geigerThread = Thread();</span><br><span class="line"></span><br><span class="line"><span class="comment">//geiger</span></span><br><span class="line"><span class="keyword">volatile</span> <span class="keyword">unsigned</span> <span class="keyword">long</span> counts = <span class="number">0</span>;                       <span class="comment">// Tube events</span></span><br><span class="line"><span class="keyword">unsigned</span> <span class="keyword">long</span> cpm = <span class="number">0</span>;                                   <span class="comment">// CPM</span></span><br><span class="line"><span class="keyword">unsigned</span> <span class="keyword">long</span> previousMillis;                            <span class="comment">// Time measurement</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> geigerPin = <span class="number">4</span>;</span><br><span class="line"><span class="keyword">unsigned</span> <span class="keyword">long</span> currentMillis = millis();</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LOG_PERIOD 30000 <span class="comment">//Logging period in milliseconds</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MINUTE_PERIOD 60000</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> ICACHE_RAM_ATTR <span class="title">ISR_impulse</span> <span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">ISR_impulse</span><span class="params">()</span> </span>&#123; <span class="comment">// Captures count of events from Geiger counter board</span></span><br><span class="line">  counts++;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">geigerCallback</span><span class="params">()</span></span>&#123;</span><br><span class="line">	currentMillis = millis();</span><br><span class="line">    <span class="keyword">if</span> (currentMillis - previousMillis &gt; LOG_PERIOD) &#123;</span><br><span class="line"></span><br><span class="line">    previousMillis = currentMillis;</span><br><span class="line">    cpm = counts * MINUTE_PERIOD / LOG_PERIOD;</span><br><span class="line">    counts = <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	Wire.begin(<span class="number">0</span>, <span class="number">2</span>);</span><br><span class="line">	Serial.begin(<span class="number">115200</span>);</span><br><span class="line">	pinMode(geigerPin, INPUT);                                                <span class="comment">// Set pin for capturing Tube events</span></span><br><span class="line">	interrupts();                                                            <span class="comment">// Enable interrupts</span></span><br><span class="line">	attachInterrupt(digitalPinToInterrupt(geigerPin), ISR_impulse, FALLING); <span class="comment">// Define interrupt on falling edge</span></span><br><span class="line">	<span class="keyword">unsigned</span> <span class="keyword">long</span> clock1 = millis();</span><br><span class="line">  </span><br><span class="line">	geigerThread.onRun(geigerCallback);</span><br><span class="line">	geigerThread.setInterval(<span class="number">1000</span>);</span><br><span class="line">  </span><br><span class="line">	display.begin(SSD1306_SWITCHCAPVCC, <span class="number">0x3C</span>);</span><br><span class="line">  </span><br><span class="line">	display.clearDisplay();</span><br><span class="line">	display.setTextSize(<span class="number">2</span>);</span><br><span class="line">	display.setTextColor(WHITE);</span><br><span class="line">	display.setCursor(<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">	display.println(<span class="string">&quot;booting&quot;</span>);</span><br><span class="line">	display.display();</span><br><span class="line">  </span><br><span class="line">	Serial.print(<span class="string">&quot;Connecting to &quot;</span>);</span><br><span class="line">	Serial.println(ssid);</span><br><span class="line"></span><br><span class="line">	WiFi.begin(ssid, password);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">while</span> (WiFi.status() != WL_CONNECTED) </span><br><span class="line">	&#123;</span><br><span class="line">		delay(<span class="number">500</span>);</span><br><span class="line">		Serial.print(<span class="string">&quot;.&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	Serial.println(<span class="string">&quot;&quot;</span>);</span><br><span class="line">	Serial.println(<span class="string">&quot;WiFi connected&quot;</span>);</span><br><span class="line">	Serial.println(<span class="string">&quot;IP address: &quot;</span>);</span><br><span class="line">	Serial.println(WiFi.localIP());</span><br><span class="line">  </span><br><span class="line">	client.setServer(mqtt_server, <span class="number">1883</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">reconnect</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">while</span> (!client.connected()) &#123;</span><br><span class="line">		Serial.print(<span class="string">&quot;AtDHTting MQTT connection...&quot;</span>);</span><br><span class="line">		<span class="keyword">if</span> (client.connect(clientID)) &#123;</span><br><span class="line">			Serial.println(<span class="string">&quot;connected&quot;</span>);</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			Serial.print(<span class="string">&quot;failed, rc=&quot;</span>);</span><br><span class="line">			Serial.print(client.state());</span><br><span class="line">			Serial.println(<span class="string">&quot; try again in 5 seconds&quot;</span>);</span><br><span class="line">			delay(<span class="number">5000</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span>(geigerThread.shouldRun())</span><br><span class="line">		geigerThread.run();</span><br><span class="line">	delay(<span class="number">30000</span>);</span><br><span class="line">  </span><br><span class="line">	<span class="keyword">if</span> (!client.connected()) &#123;</span><br><span class="line">		reconnect();</span><br><span class="line">	&#125;</span><br><span class="line">	client.loop();</span><br><span class="line">	<span class="keyword">if</span> (cpm==<span class="number">0</span>) &#123;</span><br><span class="line">		Serial.println(<span class="string">&quot;try to read sensor again!&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line">  </span><br><span class="line">	StaticJsonBuffer&lt;<span class="number">300</span>&gt; JSONbuffer;</span><br><span class="line">	JsonObject&amp; JSONencoder = JSONbuffer.createObject(); </span><br><span class="line">	JSONencoder[<span class="string">&quot;cpm&quot;</span>] = cpm;</span><br><span class="line">	<span class="keyword">float</span> usvh = cpm/<span class="number">151.0</span>;</span><br><span class="line">	JSONencoder[<span class="string">&quot;usvh&quot;</span>] = usvh;</span><br><span class="line">  </span><br><span class="line">	<span class="keyword">char</span> JSONmessageBuffer[<span class="number">300</span>];</span><br><span class="line">	JSONencoder.prettyPrintTo(JSONmessageBuffer, <span class="keyword">sizeof</span>(JSONmessageBuffer));</span><br><span class="line">	Serial.println(JSONmessageBuffer);</span><br><span class="line"></span><br><span class="line">	boolean isOK = client.publish(mqtt_topic, JSONmessageBuffer, <span class="literal">true</span>);</span><br><span class="line">	Serial.println(isOK);</span><br><span class="line">	display.clearDisplay();</span><br><span class="line">	  </span><br><span class="line">	<span class="keyword">char</span> str[<span class="number">100</span>];</span><br><span class="line">	display.setTextSize(<span class="number">2</span>);</span><br><span class="line">	display.setTextColor(WHITE);</span><br><span class="line">	display.setCursor(<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">	<span class="built_in">snprintf</span>(str,<span class="number">16</span>, <span class="string">&quot;cpm=%d&quot;</span>, cpm);</span><br><span class="line">	display.println(str);</span><br><span class="line">	<span class="built_in">snprintf</span>(str,<span class="number">16</span>, <span class="string">&quot;usvh=%.3f&quot;</span>, usvh);</span><br><span class="line">	display.println(str);</span><br><span class="line">	display.display();</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1 id="修改homeassistantconfiguration-yaml"><a href="#修改homeassistantconfiguration-yaml" class="headerlink" title="修改homeassistantconfiguration.yaml"></a>修改homeassistantconfiguration.yaml</h1><p>编辑<code>/docker/homeassistantconfiguration.yaml</code>在末尾加入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">sensor:</span><br><span class="line">  - platform: mqtt</span><br><span class="line">    state_topic: &quot;Home&#x2F;Global&quot;</span><br><span class="line">    name: &#39;cpm&#39;</span><br><span class="line">    unit_of_measurement: &#39;cpm&#39;</span><br><span class="line">    value_template: &#39;&#123;&#123; value_json.cpm &#125;&#125;&#39;</span><br><span class="line">  - platform: mqtt</span><br><span class="line">    state_topic: &quot;Home&#x2F;Global&quot;</span><br><span class="line">    name: &#39;usvh&#39;</span><br><span class="line">    unit_of_measurement: &#39;usv&#x2F;h&#39;</span><br><span class="line">    value_template: &#39;&#123;&#123; value_json.usvh &#125;&#125;&#39;</span><br></pre></td></tr></table></figure>
+<p>重启服务即可</p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/SensorsIot/Geiger-Counter-RadiationD-v1.1-CAJOE-/">https://github.com/SensorsIot/Geiger-Counter-RadiationD-v1.1-CAJOE-/</a><br><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=K28Az3-gV7E&amp;feature=youtu.be">https://www.youtube.com/watch?v=K28Az3-gV7E&amp;feature=youtu.be</a><br><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%A5%BF%E5%BC%97">https://zh.wikipedia.org/wiki/%E8%A5%BF%E5%BC%97</a><br><a target="_blank" rel="noopener" href="https://github.com/SensorsIot/Geiger-Counter-RadiationD-v1.1-CAJOE-/blob/master/Geiger_Counter.ino">https://github.com/SensorsIot/Geiger-Counter-RadiationD-v1.1-CAJOE-/blob/master/Geiger_Counter.ino</a></p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://danfei.github.io/2020/03/12/TrinityCore%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="danfei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="填坑笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/03/12/TrinityCore%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">TrinityCore笔记</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2020-03-12 23:07:58 / 修改时间：23:37:24" itemprop="dateCreated datePublished" datetime="2020-03-12T23:07:58+08:00">2020-03-12</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>在群晖的<code>Virtual Machine Manager</code>里创建新的虚拟机<br>在Debian官网下载镜像(<a target="_blank" rel="noopener" href="https://www.debian.org/distrib/">https://www.debian.org/distrib/</a>)<br>建议内存4GB/硬盘40GB</p>
+<h1 id="服务器安装"><a href="#服务器安装" class="headerlink" title="服务器安装"></a>服务器安装</h1><p>最好先安装lnmp</p>
+<blockquote>
+<p>之前的工作看这里</p>
+</blockquote>
+<ul>
+<li><a href="/2020/03/12/LNMP%E5%AE%89%E8%A3%85%E7%AC%94%E8%AE%B0/" title="LNMP安装笔记">LNMP安装笔记</a>
+接着做环境准备<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get install git clang cmake make gcc g++ libmariadbclient-dev libssl-dev libbz2-dev libreadline-dev libncurses-dev libboost-all-dev p7zip-full</span><br><span class="line">$ sudo update-alternatives --install &#x2F;usr&#x2F;bin&#x2F;cc cc &#x2F;usr&#x2F;bin&#x2F;clang 100</span><br><span class="line">$ sudo update-alternatives --install &#x2F;usr&#x2F;bin&#x2F;c++ c++ &#x2F;usr&#x2F;bin&#x2F;clang 100</span><br></pre></td></tr></table></figure>
+下载3.3.5源码<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~&#x2F;</span><br><span class="line">$ git clone -b 3.3.5 git:&#x2F;&#x2F;github.com&#x2F;TrinityCore&#x2F;TrinityCore.git</span><br></pre></td></tr></table></figure>
+配置<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo cmake ..&#x2F; -DCMAKE_INSTALL_PREFIX&#x3D;&#x2F;home&#x2F;wow&#x2F;server</span><br></pre></td></tr></table></figure></li>
+<li>DTOOLS=0 是不编译地图提取工具的选项<br>编译<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo make</span><br><span class="line">$ sudo make install</span><br></pre></td></tr></table></figure>
+后续可以拉取git代码更新<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~&#x2F;TrinityCore&#x2F;</span><br><span class="line">$ git pull origin 3.3.5</span><br></pre></td></tr></table></figure>
+<h1 id="服务器设置"><a href="#服务器设置" class="headerlink" title="服务器设置"></a>服务器设置</h1>上传客户端到<code>~/wow_client</code><br>提取DBC和Maps<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~&#x2F;wow_client&#x2F;</span><br><span class="line">$ &#x2F;home&#x2F;wow&#x2F;server&#x2F;bin&#x2F;mapextractor</span><br><span class="line">$ mkdir &#x2F;home&#x2F;wow&#x2F;server&#x2F;data</span><br><span class="line">$ cp -r dbc maps &#x2F;home&#x2F;wow&#x2F;server&#x2F;data</span><br></pre></td></tr></table></figure>
+提取vmaps（可选）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~&#x2F;wow_client&#x2F;</span><br><span class="line">$ &#x2F;home&#x2F;wow&#x2F;server&#x2F;bin&#x2F;vmap4extractor</span><br><span class="line">$ mkdir vmaps</span><br><span class="line">$ &#x2F;home&#x2F;wow&#x2F;server&#x2F;bin&#x2F;vmap4assembler Buildings vmaps</span><br><span class="line">$ cp -r vmaps &#x2F;home&#x2F;wow&#x2F;server&#x2F;data</span><br></pre></td></tr></table></figure>
+提取mmaps（可选，我用了6个多小时）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~&#x2F;wow_client&#x2F;</span><br><span class="line">$ mkdir mmaps</span><br><span class="line">$ &#x2F;home&#x2F;wow&#x2F;server&#x2F;bin&#x2F;mmaps_generator</span><br><span class="line">$ cp -r mmaps &#x2F;home&#x2F;wow&#x2F;server&#x2F;data</span><br></pre></td></tr></table></figure>
+拷贝配置文件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~&#x2F;server&#x2F;etc&#x2F;</span><br><span class="line">$ cp worldserver.conf.dist worldserver.conf</span><br><span class="line">$ cp authserver.conf.dist authserver.conf</span><br></pre></td></tr></table></figure>
+编辑worldserver.conf<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DataDir &#x3D; &quot;..&#x2F;data&quot;</span><br></pre></td></tr></table></figure>
+还有数据库配置（帐号wow，密码trinity）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">LoginDatabaseInfo &#x3D; &quot;127.0.0.1;3306;wow;trinity;auth&quot; #worldserver.conf</span><br><span class="line">WorldDatabaseInfo &#x3D; &quot;127.0.0.1;3306;wow;trinity;world&quot; #worldserver.conf</span><br><span class="line">CharacterDatabaseInfo &#x3D; &quot;127.0.0.1;3306;wow;trinity;characters&quot; #worldserver.conf</span><br></pre></td></tr></table></figure>
+编辑authserver.conf<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LoginDatabaseInfo &#x3D; &quot;127.0.0.1;3306;trinity;trinity;auth&quot;</span><br></pre></td></tr></table></figure>
+<h1 id="安装数据库"><a href="#安装数据库" class="headerlink" title="安装数据库"></a>安装数据库</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CREATE DATABASE &#96;world&#96; DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;</span><br><span class="line">CREATE DATABASE &#96;characters&#96; DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;</span><br><span class="line">CREATE DATABASE &#96;auth&#96; DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;</span><br><span class="line">GRANT ALL PRIVILEGES ON &#96;world&#96; . * TO &#39;wow&#39;@&#39;localhost&#39; WITH GRANT OPTION;</span><br><span class="line">GRANT ALL PRIVILEGES ON &#96;characters&#96; . * TO &#39;wow&#39;@&#39;localhost&#39; WITH GRANT OPTION;</span><br><span class="line">GRANT ALL PRIVILEGES ON &#96;auth&#96; . * TO &#39;wow&#39;@&#39;localhost&#39; WITH GRANT OPTION;</span><br></pre></td></tr></table></figure>
+这三个数据库的说明如下<blockquote>
+<p>auth - holds account data - usernames, passwords, GM access, realm information, etc.<br>characters - holds character data - created characters, inventory, bank items, auction house, tickets, etc.<br>world - holds game-experience content such as NPCs, quests, objects, etc<br>hotfixes (master only) - holds fixes not already added to the core or other official databases.</p>
+</blockquote>
+</li>
+</ul>
+<p>下载最新的数据库文件(<a target="_blank" rel="noopener" href="https://github.com/TrinityCore/TrinityCore/releases">https://github.com/TrinityCore/TrinityCore/releases</a>)<br>把它放在<code>server/bin</code>目录下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~&#x2F;server&#x2F;bin&#x2F;</span><br><span class="line">$ wget https:&#x2F;&#x2F;github.com&#x2F;TrinityCore&#x2F;TrinityCore&#x2F;releases&#x2F;download&#x2F;TDB335.20021&#x2F;TDB_full_world_335.20021_2020_02_15.7z</span><br><span class="line">$ 7z x TDB_full_world_335.20021_2020_02_15.7z</span><br><span class="line">$ rm TDB_full_world_335.20021_2020_02_15.7z</span><br><span class="line">$ .&#x2F;worldserver </span><br></pre></td></tr></table></figure>
+<p>执行结束，数据库导入完成</p>
+<h1 id="配置修改"><a href="#配置修改" class="headerlink" title="配置修改"></a>配置修改</h1><p>修改本机客户端文件<code>\Data\zhCN\realmlist.wtf</code>，改为服务器地址</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set realmlist xxx.xxx.xxx.xxx</span><br></pre></td></tr></table></figure>
+<p>修改数据库<code>auth</code>表<code>realmlist</code></p>
+<ul>
+<li><code>name</code>是服务器名称</li>
+<li><code>address</code>是服务器地址</li>
+<li><code>gamebuild</code>是客户端版本号（客户端启动时左下角可见）</li>
+</ul>
+<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>启动服务器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~&#x2F;server&#x2F;bin&#x2F;</span><br><span class="line">$ .&#x2F;authserver &amp;</span><br><span class="line">$ .&#x2F;worldserver</span><br></pre></td></tr></table></figure>
+<p>创建帐号并设置为gm（3级权限）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">account create user password</span><br><span class="line">account set gmlevel userid 3 1</span><br></pre></td></tr></table></figure>
+<p>如果要和朋友一起玩，就映射一个域名上去<br>frp映射好本地服务器的<code>3724</code>和<code>8085</code>端口<br>frp服务器开对应的防火墙端口即可</p>
+<p>gm指令请惠存<br>(<a target="_blank" rel="noopener" href="https://trinitycore.atlassian.net/wiki/spaces/tc/pages/2130065/GM+Commands">https://trinitycore.atlassian.net/wiki/spaces/tc/pages/2130065/GM+Commands</a>)</p>
+<p>优秀插件<br>(<a target="_blank" rel="noopener" href="https://rochet2.github.io/downloads/">https://rochet2.github.io/downloads/</a>)</p>
+<blockquote>
+<p>引用<br><a target="_blank" rel="noopener" href="https://trinitycore.atlassian.net/wiki/spaces/tc/pages/2130077/Installation+Guide">https://trinitycore.atlassian.net/wiki/spaces/tc/pages/2130077/Installation+Guide</a></p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://danfei.github.io/2020/03/12/LNMP%E5%AE%89%E8%A3%85%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="danfei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="填坑笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/03/12/LNMP%E5%AE%89%E8%A3%85%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">LNMP安装笔记</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2020-03-12 00:14:30 / 修改时间：00:43:19" itemprop="dateCreated datePublished" datetime="2020-03-12T00:14:30+08:00">2020-03-12</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>安装Nginx </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># apt update </span><br><span class="line"># apt install nginx </span><br></pre></td></tr></table></figure>
+<p>控制服务状态</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># systemctl start nginx</span><br><span class="line"># systemctl restart nginx </span><br><span class="line"># systemctl stop nginx</span><br><span class="line"># systemctl reload nginx </span><br><span class="line"># systemctl status nginx </span><br></pre></td></tr></table></figure>
+<p>安装MariaDB</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># apt install mariadb-server</span><br></pre></td></tr></table></figure>
+<p>安全配置全部Yes</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># mysql_secure_installation</span><br></pre></td></tr></table></figure>
+<p>安装PHP-FPM (Fast Process Manager)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># apt install php-fpm php-mysqli</span><br></pre></td></tr></table></figure>
+<p>查看启动状态</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># systemctl status php7.3-fpm</span><br></pre></td></tr></table></figure>
+<p>修改PHP-FPM配置文件<code>/etc/php/7.3/fpm/php.ini</code><br>取消如下内容的注释，并改为0</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cgi.fix_pathinfo&#x3D;0</span><br></pre></td></tr></table></figure>
+<p>修改Nginx配置文件<code>/etc/nginx/sites-available/default</code><br>取消如下内容的注释</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">location ~ \.php$ &#123;</span><br><span class="line">            include snippets&#x2F;fastcgi-php.conf;</span><br><span class="line">            fastcgi_pass unix:&#x2F;run&#x2F;php&#x2F;php7.3-fpm.sock;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>同时添加主页<code>index.php</code><br>重启服务</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># systemctl restart php7.3-fpm</span><br><span class="line"># systemctl restart nginx</span><br></pre></td></tr></table></figure>
+<p>在<code>/var/www/html/</code>下编写测试页</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php phpinfo(); ?&gt;</span><br></pre></td></tr></table></figure>
+<p>测试正常后继续<br>下载phpMyAdmin，并解压到<code>/var/www/html/</code>目录下<br>进入mysql命令行创建phpmyadmin用户</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">CREATE USER &#39;phpmyadmin&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;password&#39;;</span><br><span class="line">GRANT ALL PRIVILEGES ON *.* TO &#39;phpmyadmin&#39;@&#39;localhost&#39; WITH GRANT OPTION;</span><br><span class="line">FLUSH PRIVILEGES;</span><br></pre></td></tr></table></figure>
+<p>使用phpmyadmin登录成功即可</p>
+<blockquote>
+<p>引用<br><a target="_blank" rel="noopener" href="https://www.tecmint.com/install-lemp-on-debian-10-server/">https://www.tecmint.com/install-lemp-on-debian-10-server/</a><br><a target="_blank" rel="noopener" href="https://www.centos.bz/2017/07/mysql5-7-phpmyadmin-access-denied-for-user-rootlocalhost/">https://www.centos.bz/2017/07/mysql5-7-phpmyadmin-access-denied-for-user-rootlocalhost/</a></p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://danfei.github.io/2020/03/11/%E5%9C%A8KiCad5%E4%B8%AD%E4%BD%BF%E7%94%A8FreeRouting/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="danfei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="填坑笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/03/11/%E5%9C%A8KiCad5%E4%B8%AD%E4%BD%BF%E7%94%A8FreeRouting/" class="post-title-link" itemprop="url">在KiCad5中使用FreeRouting</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2020-03-11 20:44:09 / 修改时间：22:37:50" itemprop="dateCreated datePublished" datetime="2020-03-11T20:44:09+08:00">2020-03-11</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>升级了新版的KiCad5，感觉好用很多<br>我布线多用FreeRouter<del>因为人工智能终究会取代我们</del><br>新版的FreeRouting打包在<a target="_blank" rel="noopener" href="https://layouteditor.com/">LayoutEditor</a>这款软件里<br>下载程序压缩包后，提取其中的<code>freeRouting.jar</code></p>
+<p>我是在Ubuntu上运行Kicad的<br>所以还需要安装OpenJava的运行环境</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt install default-jre</span><br></pre></td></tr></table></figure>
+<p>只要在pcbnew里面导出.DSN文件<br><code>File → Export → Specctra DSN</code><br>导入到FreeRouting中，布好线之后再导出.SES文件<br>再次导入到pcbnew程序里即可<br><code>File → Import → Spectra Session</code></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://danfei.github.io/2020/03/09/%E4%BA%8C%E6%B0%A7%E5%8C%96%E7%A2%B3%E4%BC%A0%E6%84%9F%E5%99%A8%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="danfei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="填坑笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/03/09/%E4%BA%8C%E6%B0%A7%E5%8C%96%E7%A2%B3%E4%BC%A0%E6%84%9F%E5%99%A8%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">二氧化碳传感器使用笔记</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2020-03-09 22:16:05 / 修改时间：22:19:18" itemprop="dateCreated datePublished" datetime="2020-03-09T22:16:05+08:00">2020-03-09</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>这是一款攀藤科技的二氧化碳传感器 <a target="_blank" rel="noopener" href="http://www.plantower.com/content/?99.html">链接</a> <a target="_blank" rel="noopener" href="http://www.plantower.com/upload/ueditor/image/20170329/14907552666040083.jpg">图片</a></p>
+<blockquote>
+<p>DS-CO2-20 是一款基于非分光红外吸收原理的数字式二氧化碳浓度传感器，可连续采集并计算单位体积内空气中的二氧化碳浓度，并以通用数字接口形式输出。<br>本传感器可嵌入各种与二氧化碳浓度相关的仪器仪表或环境改善设备，为其提供及时准确的浓度数据。</p>
+</blockquote>
+<h1 id="硬件部分"><a href="#硬件部分" class="headerlink" title="硬件部分"></a>硬件部分</h1><p>它的针脚是2mm间距，接口朝下俯视角从左到右分别是pin1到pin7，需要注意的是5V供电</p>
+<table>
+<thead>
+<tr>
+<th>管脚</th>
+<th>标号</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>pin1</td>
+<td>VCC</td>
+<td>5V</td>
+</tr>
+<tr>
+<td>pin2</td>
+<td>GND</td>
+<td></td>
+</tr>
+<tr>
+<td>pin3</td>
+<td>RXD</td>
+<td>TTL_3.3V</td>
+</tr>
+<tr>
+<td>pin4</td>
+<td>TXD</td>
+<td>TTL_3.3V</td>
+</tr>
+<tr>
+<td>pin5</td>
+<td>RESET</td>
+<td>TTL_3.3V</td>
+</tr>
+<tr>
+<td>pin6</td>
+<td>NC</td>
+<td></td>
+</tr>
+<tr>
+<td>pin7</td>
+<td>NC</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>把NodeMCU和它连接使用，接法如下</p>
+<table>
+<thead>
+<tr>
+<th>NodeMCU</th>
+<th>DS-CO2-20</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Vin(5V)</td>
+<td>VCC</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>D5(IO14)</td>
+<td>RXD</td>
+</tr>
+<tr>
+<td>D6(IO12)</td>
+<td>TXD</td>
+</tr>
+</tbody></table>
+<h1 id="软件部分"><a href="#软件部分" class="headerlink" title="软件部分"></a>软件部分</h1><p>通讯方式是串口通讯，默认波特率：9600bps，校验位：无，停止位：1 位<br>通讯协议是应答式，主机发送<code>0x42, 0x4d, 0xe3, 0x00, 0x00, 0x01, 0x72</code><br>其中前两位是特征字节，第三位是指令字节，最后两位是校验字节</p>
+<p>从机应答格式协议长度为12字节，从<code>0x42, 0x4d</code>开始二氧化碳数值的高低八位分别在第5、6位<br>最后两位是校验字节</p>
+<p>程序如下</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;ESP8266WiFi.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;Thread.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;SPI.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;Wire.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;SoftwareSerial.h&gt;</span></span></span><br><span class="line"></span><br><span class="line">Thread CO2Thread = Thread();</span><br><span class="line"><span class="function">SoftwareSerial <span class="title">CO2sensor</span><span class="params">(<span class="number">14</span>, <span class="number">12</span>, <span class="literal">false</span>, <span class="number">128</span>)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//CO2</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">unsigned</span> <span class="keyword">int</span> CO2ppm = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">unsigned</span> <span class="keyword">char</span> CO2AskData[<span class="number">7</span>] = &#123;<span class="number">0x42</span>, <span class="number">0x4d</span>, <span class="number">0xe3</span>, <span class="number">0x00</span>, <span class="number">0x00</span>, <span class="number">0x01</span>, <span class="number">0x72</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> _<span class="title">panteng</span> &#123;</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">char</span> len[<span class="number">2</span>];</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">char</span> co2_cf[<span class="number">2</span>];</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">char</span> d[<span class="number">4</span>];</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">char</span> crc_cf[<span class="number">2</span>];</span><br><span class="line">&#125; panteng;</span><br><span class="line"><span class="keyword">char</span> crc1,crc2;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">CO2Callback</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">unsigned</span> <span class="keyword">char</span> c;</span><br><span class="line">	<span class="keyword">static</span> <span class="keyword">int</span> state = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">static</span> <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">    CO2sensor.write(CO2AskData, <span class="number">7</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">while</span> (CO2sensor.available()) &#123;</span><br><span class="line">        c = CO2sensor.read();</span><br><span class="line">		<span class="comment">//Serial.print(c,HEX);</span></span><br><span class="line">        <span class="keyword">switch</span> (state) &#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">0</span>:</span><br><span class="line">                <span class="keyword">if</span> (<span class="number">0x42</span> == c)</span><br><span class="line">                    state = <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">                <span class="keyword">if</span> (<span class="number">0x4d</span> == c) &#123;</span><br><span class="line">                    state = <span class="number">2</span>;</span><br><span class="line">                    count = <span class="number">0</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">                </span><br><span class="line">				((<span class="keyword">unsigned</span> <span class="keyword">char</span> *) &amp;panteng)[count++] = c;         </span><br><span class="line">				<span class="keyword">if</span> (count &gt; <span class="number">12</span>) &#123;</span><br><span class="line">                    state = <span class="number">0</span>;</span><br><span class="line">                    </span><br><span class="line">					crc1 = panteng.crc_cf[<span class="number">0</span>] * <span class="number">256</span> + panteng.crc_cf[<span class="number">1</span>];</span><br><span class="line">                    crc2 =  <span class="number">0x42</span> + <span class="number">0x4d</span> + panteng.len[<span class="number">0</span>]+ panteng.len[<span class="number">1</span>]+panteng.co2_cf[<span class="number">0</span>]+panteng.co2_cf[<span class="number">1</span>]+panteng.d[<span class="number">0</span>]+panteng.d[<span class="number">1</span>]+panteng.d[<span class="number">2</span>]+panteng.d[<span class="number">3</span>];</span><br><span class="line">                    </span><br><span class="line">					<span class="comment">//Serial.print(&quot;crc1 = &quot;);Serial.println(crc1,HEX);</span></span><br><span class="line">					<span class="comment">//Serial.print(&quot;crc2 = &quot;);Serial.println(crc2,HEX);</span></span><br><span class="line">					</span><br><span class="line">					<span class="keyword">if</span> (crc1 == crc2)&#123;</span><br><span class="line">						CO2ppm = panteng.co2_cf[<span class="number">0</span>] * <span class="number">256</span> + panteng.co2_cf[<span class="number">1</span>];</span><br><span class="line">						Serial.print(<span class="string">&quot;co2 = &quot;</span>);Serial.print(CO2ppm);Serial.println(<span class="string">&quot; ppm&quot;</span>);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">default</span>:</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">	delay(<span class="number">1000</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span></span>&#123;</span><br><span class="line">  CO2Thread.onRun(CO2Callback);</span><br><span class="line">  CO2Thread.setInterval(<span class="number">1000</span>);</span><br><span class="line">  </span><br><span class="line">  Serial.begin(<span class="number">115200</span>);</span><br><span class="line">  CO2sensor.begin(<span class="number">9600</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(CO2Thread.shouldRun())</span><br><span class="line">    CO2Thread.run();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://danfei.github.io/2020/03/08/%E6%B7%BB%E5%8A%A0%E4%BC%A0%E6%84%9F%E5%99%A8%E5%88%B0HomeAssistant/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="danfei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="填坑笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/03/08/%E6%B7%BB%E5%8A%A0%E4%BC%A0%E6%84%9F%E5%99%A8%E5%88%B0HomeAssistant/" class="post-title-link" itemprop="url">添加传感器到HomeAssistant</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-03-08 01:54:32" itemprop="dateCreated datePublished" datetime="2020-03-08T01:54:32+08:00">2020-03-08</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-10 00:07:50" itemprop="dateModified" datetime="2020-03-10T00:07:50+08:00">2020-03-10</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <blockquote>
+<p>之前的工作看这里</p>
+</blockquote>
+<ul>
+<li><a href="/2020/03/03/%E7%BE%A4%E6%99%96%E6%90%AD%E5%BB%BAHomeAssistant%E8%BF%9E%E6%8E%A5HomeKit/" title="群晖搭建HomeAssistant连接HomeKit">群晖搭建HomeAssistant连接HomeKit</a>
+
+</li>
+</ul>
+<h1 id="修改homeassistantconfiguration-yaml"><a href="#修改homeassistantconfiguration-yaml" class="headerlink" title="修改homeassistantconfiguration.yaml"></a>修改homeassistantconfiguration.yaml</h1><p>编辑<code>/docker/homeassistantconfiguration.yaml</code>在末尾加入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">sensor:</span><br><span class="line">  - platform: mqtt</span><br><span class="line">    state_topic: &quot;esp&#x2F;sensor1&quot;</span><br><span class="line">    name: &#39;Temperature&#39;</span><br><span class="line">    unit_of_measurement: &#39;°C&#39;</span><br><span class="line">    value_template: &#39;&#123;&#123; value_json.Temperature &#125;&#125;&#39;</span><br><span class="line">  - platform: mqtt</span><br><span class="line">    state_topic: &quot;esp&#x2F;sensor1&quot;</span><br><span class="line">    name: &#39;Humidity&#39;</span><br><span class="line">    unit_of_measurement: &#39;%&#39;</span><br><span class="line">    value_template: &#39;&#123;&#123; value_json.Humidity &#125;&#125;&#39;</span><br><span class="line">    device_class: humidity</span><br></pre></td></tr></table></figure>
+<h1 id="esp8266程序"><a href="#esp8266程序" class="headerlink" title="esp8266程序"></a>esp8266程序</h1><p>将DHT22连接到NodeMCU的<code>D2</code>口也就是<code>IO4</code>上<br>烧写程序如下</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;ESP8266WiFi.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;PubSubClient.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;ArduinoJson.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;DHT.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> DHTPIN 4</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> DHTTYPE DHT22</span></span><br><span class="line"></span><br><span class="line"><span class="function">DHT <span class="title">dht</span><span class="params">(DHTPIN, DHTTYPE)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Update these with values suitable for your network.</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span>* ssid = <span class="string">&quot;xxx&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span>* password = <span class="string">&quot;xxx&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span>* mqtt_server = <span class="string">&quot;xxx.xxx.xxx.xxx&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span>* mqtt_topic = <span class="string">&quot;esp/sensor1&quot;</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">WiFiClient espClient;</span><br><span class="line"><span class="function">PubSubClient <span class="title">client</span><span class="params">(espClient)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  Serial.begin(<span class="number">9600</span>);</span><br><span class="line">  setup_wifi();</span><br><span class="line">  client.setServer(mqtt_server, <span class="number">1883</span>);</span><br><span class="line">  dht.begin();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup_wifi</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  delay(<span class="number">10</span>);</span><br><span class="line">  <span class="comment">// We start by connecting to a WiFi network</span></span><br><span class="line">  Serial.println();</span><br><span class="line">  Serial.print(<span class="string">&quot;Connecting to &quot;</span>);</span><br><span class="line">  Serial.println(ssid);</span><br><span class="line"></span><br><span class="line">  WiFi.begin(ssid, password);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span> (WiFi.status() != WL_CONNECTED) </span><br><span class="line">  &#123;</span><br><span class="line">    delay(<span class="number">500</span>);</span><br><span class="line">    Serial.print(<span class="string">&quot;.&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  Serial.println(<span class="string">&quot;&quot;</span>);</span><br><span class="line">  Serial.println(<span class="string">&quot;WiFi connected&quot;</span>);</span><br><span class="line">  Serial.println(<span class="string">&quot;IP address: &quot;</span>);</span><br><span class="line">  Serial.println(WiFi.localIP());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">reconnect</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="comment">// Loop until we&#x27;re reconnected</span></span><br><span class="line">  <span class="keyword">while</span> (!client.connected()) &#123;</span><br><span class="line">    Serial.print(<span class="string">&quot;Attempting MQTT connection...&quot;</span>);</span><br><span class="line">    <span class="comment">// Attempt to connect</span></span><br><span class="line">    <span class="keyword">if</span> (client.connect(<span class="string">&quot;arduinoClient&quot;</span>)) &#123;</span><br><span class="line">    <span class="comment">//if (client.connect(&quot;arduinoClient&quot;, mqtt_user, mqtt_password)) &#123;</span></span><br><span class="line">      Serial.println(<span class="string">&quot;connected&quot;</span>);</span><br><span class="line">      <span class="comment">// Once connected, publish an announcement...</span></span><br><span class="line">      client.subscribe(<span class="string">&quot;esp/#&quot;</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      Serial.print(<span class="string">&quot;failed, rc=&quot;</span>);</span><br><span class="line">      Serial.print(client.state());</span><br><span class="line">      Serial.println(<span class="string">&quot; try again in 5 seconds&quot;</span>);</span><br><span class="line">      <span class="comment">// Wait 5 seconds before retrying</span></span><br><span class="line">      delay(<span class="number">5000</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (!client.connected()) &#123;</span><br><span class="line">		reconnect();</span><br><span class="line">	&#125;</span><br><span class="line">	client.loop();</span><br><span class="line"></span><br><span class="line">	<span class="comment">// Wait a few seconds between measurements.</span></span><br><span class="line">	delay(<span class="number">2000</span>);</span><br><span class="line">	<span class="keyword">float</span> h = dht.readHumidity();</span><br><span class="line">	<span class="keyword">float</span> t = dht.readTemperature();</span><br><span class="line">	<span class="keyword">if</span> (isnan(h) || isnan(t)) &#123;</span><br><span class="line">		Serial.println(<span class="string">&quot;Failed to read from DHT sensor!&quot;</span>);</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//Serial.print(&quot;Humidity: &quot;);</span></span><br><span class="line">	<span class="comment">//Serial.print(h);</span></span><br><span class="line">	<span class="comment">//Serial.print(&quot; %\t&quot;);</span></span><br><span class="line">	<span class="comment">//Serial.print(&quot;Temperature: &quot;);</span></span><br><span class="line">	<span class="comment">//Serial.print(t);</span></span><br><span class="line">	<span class="comment">//Serial.print(&quot; *C &quot;);</span></span><br><span class="line">  </span><br><span class="line">	StaticJsonBuffer&lt;<span class="number">300</span>&gt; JSONbuffer;   <span class="comment">//Declaring static JSON buffer</span></span><br><span class="line">	JsonObject&amp; JSONencoder = JSONbuffer.createObject(); </span><br><span class="line">	JSONencoder[<span class="string">&quot;Humidity&quot;</span>] = h;</span><br><span class="line">	JSONencoder[<span class="string">&quot;Temperature&quot;</span>] = t;</span><br><span class="line">	<span class="comment">//JsonObject&amp; data = JSONencoder.createNestedObject(&quot;data&quot;);</span></span><br><span class="line">	<span class="comment">//data.set(&quot;Humidity&quot;, h);</span></span><br><span class="line">	<span class="comment">//data.set(&quot;Temperature&quot;, t);</span></span><br><span class="line">	</span><br><span class="line">	<span class="keyword">char</span> JSONmessageBuffer[<span class="number">300</span>];</span><br><span class="line">	JSONencoder.prettyPrintTo(JSONmessageBuffer, <span class="keyword">sizeof</span>(JSONmessageBuffer));</span><br><span class="line">	Serial.println(JSONmessageBuffer);</span><br><span class="line"></span><br><span class="line">	boolean isOK = client.publish(mqtt_topic, JSONmessageBuffer, <span class="literal">true</span>);</span><br><span class="line">	Serial.println(isOK);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>在<code>开发者工具/MQTT</code>中<br>订阅<code>主题Topic</code>为<code>esp/sensor1</code><br>注意监听</p>
+<p>在主页面中右上角选择<code>配置UI</code><br>在右下角选择<code>添加卡片</code><br>在<code>实体</code>里选择<code>sensor.temperature</code>和<code>sensor.humidity</code><br>完成添加到主页</p>
+<p>在iPhone的家庭APP里可以看到</p>
+<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>湿度传感器需要在修改homeassistantconfiguration.yaml的时候加入<code>device_class: humidity</code><br>Device Class支持的传感器类型有</p>
+<blockquote>
+<p>None: Generic sensor. This is the default and doesn’t need to be set.<br>battery: Percentage of battery that is left.<br>humidity: Percentage of humidity in the air.<br>illuminance: The current light level in lx or lm.<br>signal_strength: Signal strength in dB or dBm.<br>temperature: Temperature in °C or °F.<br>power: Power in W or kW.<br>pressure: Pressure in hPa or mbar.<br>timestamp: Datetime object or timestamp string.</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://danfei.github.io/2020/03/05/Debian%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="danfei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="填坑笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/03/05/Debian%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8/" class="post-title-link" itemprop="url">Debian添加自动补全</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-03-05 13:36:08" itemprop="dateCreated datePublished" datetime="2020-03-05T13:36:08+08:00">2020-03-05</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-10 13:38:49" itemprop="dateModified" datetime="2020-03-10T13:38:49+08:00">2020-03-10</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>安装bash-completion</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install bash-completion</span><br></pre></td></tr></table></figure>
+<p>编辑~/.bashrc 文件，添加如下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if [ -f &#x2F;etc&#x2F;bash_completion ]; then</span><br><span class="line">. &#x2F;etc&#x2F;bash_completion</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+<p>重新登录</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://danfei.github.io/2020/03/03/%E7%BE%A4%E6%99%96%E6%90%AD%E5%BB%BAHomeAssistant%E8%BF%9E%E6%8E%A5HomeKit/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="danfei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="填坑笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/03/03/%E7%BE%A4%E6%99%96%E6%90%AD%E5%BB%BAHomeAssistant%E8%BF%9E%E6%8E%A5HomeKit/" class="post-title-link" itemprop="url">群晖搭建HomeAssistant连接HomeKit</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2020-03-03 15:45:42 / 修改时间：22:37:09" itemprop="dateCreated datePublished" datetime="2020-03-03T15:45:42+08:00">2020-03-03</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="安装HomeAssistant"><a href="#安装HomeAssistant" class="headerlink" title="安装HomeAssistant"></a>安装HomeAssistant</h1><p>在群晖Docker的注册表里搜索并下载<code>homeassistant/home-assistant</code><br>在<code>高级设置</code>里勾选<code>启动自动重新启动</code><br>在<code>卷</code>里设置<code>/docker/homeassistant</code>映射装载路径<code>/config</code><br>在<code>网络</code>里勾选<code>使用与Docker Host相同的网络</code><br>在<code>环境</code>里设置<code>TZ</code>数值为<code>Asia/Shanghai</code><br>浏览器访问<code>http://群晖的ip:8123</code>即可完成剩下的设置</p>
+<p>添加HomeKit支持<br>编辑<code>/docker/homeassistantconfiguration.yaml</code>在末尾加入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">homekit: </span><br></pre></td></tr></table></figure>
+<p>末尾有空格</p>
+<p>返回HomeAssistant页面，会收到HomeKit的配置代码<br>如果忘记了此代码，可以删除<code>.homekit.state</code>文件</p>
+<h1 id="安装MQTT服务器"><a href="#安装MQTT服务器" class="headerlink" title="安装MQTT服务器"></a>安装MQTT服务器</h1><p>在群晖Docker的注册表里搜索并下载<code>ncarlier/mqtt</code><br>在<code>高级设置</code>里勾选<code>启动自动重新启动</code><br>在<code>网络</code>里勾选<code>使用与Docker Host相同的网络</code><br>完成设置<br>编辑<code>/docker/homeassistantconfiguration.yaml</code>在末尾加入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mqtt:</span><br><span class="line">    broker: 192.168.1.110</span><br><span class="line">    discovery: true</span><br><span class="line">    discovery_prefix: homeassistant</span><br></pre></td></tr></table></figure>
+<h1 id="烧写esp8266程序"><a href="#烧写esp8266程序" class="headerlink" title="烧写esp8266程序"></a>烧写esp8266程序</h1><p>基础设置参考这里<br>(<a target="_blank" rel="noopener" href="https://randomnerdtutorials.com/how-to-install-esp8266-board-arduino-ide/">https://randomnerdtutorials.com/how-to-install-esp8266-board-arduino-ide/</a>)<br>此外安装库<code>PubSubClient</code><br>烧写程序如下</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;ESP8266WiFi.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;PubSubClient.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Update these with values suitable for your network.</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span>* ssid = <span class="string">&quot;xxx&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span>* password = <span class="string">&quot;xxx&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span>* mqtt_server = <span class="string">&quot;xxx.xxx.xxx.xxx&quot;</span>;</span><br><span class="line"></span><br><span class="line">WiFiClient espClient;</span><br><span class="line"><span class="function">PubSubClient <span class="title">client</span><span class="params">(espClient)</span></span>;</span><br><span class="line">String switch1;</span><br><span class="line">String strTopic;</span><br><span class="line">String strPayload;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup_wifi</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  delay(<span class="number">10</span>);</span><br><span class="line">  <span class="comment">// We start by connecting to a WiFi network</span></span><br><span class="line">  Serial.println();</span><br><span class="line">  Serial.print(<span class="string">&quot;Connecting to &quot;</span>);</span><br><span class="line">  Serial.println(ssid);</span><br><span class="line"></span><br><span class="line">  WiFi.begin(ssid, password);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span> (WiFi.status() != WL_CONNECTED) </span><br><span class="line">  &#123;</span><br><span class="line">    delay(<span class="number">500</span>);</span><br><span class="line">    Serial.print(<span class="string">&quot;.&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  Serial.println(<span class="string">&quot;&quot;</span>);</span><br><span class="line">  Serial.println(<span class="string">&quot;WiFi connected&quot;</span>);</span><br><span class="line">  Serial.println(<span class="string">&quot;IP address: &quot;</span>);</span><br><span class="line">  Serial.println(WiFi.localIP());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">callback</span><span class="params">(<span class="keyword">char</span>* topic, byte* payload, <span class="keyword">unsigned</span> <span class="keyword">int</span> length)</span> </span>&#123;</span><br><span class="line">  payload[length] = <span class="string">&#x27;\0&#x27;</span>;</span><br><span class="line">  strTopic = String((<span class="keyword">char</span>*)topic);</span><br><span class="line">  <span class="keyword">if</span>(strTopic == <span class="string">&quot;esp/switch1&quot;</span>)</span><br><span class="line">    &#123;</span><br><span class="line">    switch1 = String((<span class="keyword">char</span>*)payload);</span><br><span class="line">    <span class="keyword">if</span>(switch1 == <span class="string">&quot;ON&quot;</span>)</span><br><span class="line">      &#123;</span><br><span class="line">        Serial.println(<span class="string">&quot;ON&quot;</span>);</span><br><span class="line">        digitalWrite(LED_BUILTIN, LOW);</span><br><span class="line">      &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">      &#123;</span><br><span class="line">        Serial.println(<span class="string">&quot;OFF&quot;</span>);</span><br><span class="line">        digitalWrite(LED_BUILTIN, HIGH);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">reconnect</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="comment">// Loop until we&#x27;re reconnected</span></span><br><span class="line">  <span class="keyword">while</span> (!client.connected()) &#123;</span><br><span class="line">    Serial.print(<span class="string">&quot;Attempting MQTT connection...&quot;</span>);</span><br><span class="line">    <span class="comment">// Attempt to connect</span></span><br><span class="line">    <span class="keyword">if</span> (client.connect(<span class="string">&quot;arduinoClient&quot;</span>)) &#123;</span><br><span class="line">      Serial.println(<span class="string">&quot;connected&quot;</span>);</span><br><span class="line">      <span class="comment">// Once connected, publish an announcement...</span></span><br><span class="line">      client.subscribe(<span class="string">&quot;esp/#&quot;</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      Serial.print(<span class="string">&quot;failed, rc=&quot;</span>);</span><br><span class="line">      Serial.print(client.state());</span><br><span class="line">      Serial.println(<span class="string">&quot; try again in 5 seconds&quot;</span>);</span><br><span class="line">      <span class="comment">// Wait 5 seconds before retrying</span></span><br><span class="line">      delay(<span class="number">5000</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  Serial.begin(<span class="number">115200</span>);</span><br><span class="line">  setup_wifi(); </span><br><span class="line">  client.setServer(mqtt_server, <span class="number">1883</span>);</span><br><span class="line">  client.setCallback(callback);</span><br><span class="line"></span><br><span class="line">  pinMode(LED_BUILTIN, OUTPUT);</span><br><span class="line">  digitalWrite(LED_BUILTIN, HIGH);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (!client.connected()) &#123;</span><br><span class="line">    reconnect();</span><br><span class="line">  &#125;</span><br><span class="line">  client.loop();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>编辑<code>/docker/homeassistantconfiguration.yaml</code>在末尾加入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">switch:</span><br><span class="line">  - platform: mqtt</span><br><span class="line">    name: &quot;light&quot;</span><br><span class="line">    state_topic: &quot;esp&#x2F;switch1&quot;</span><br><span class="line">    command_topic: &quot;esp&#x2F;switch1&quot;</span><br><span class="line">    payload_on: &quot;ON&quot;</span><br><span class="line">    payload_off: &quot;OFF&quot;</span><br></pre></td></tr></table></figure>
+<p>在<code>开发者工具/MQTT</code>中<br>填写<code>主题Topic</code>为<code>esp/switch1</code><br>分别发送有效负载为<code>ON</code>或<code>OFF</code>进行测试<br>注意在客户端监听</p>
+<p>在主页面中右上角选择<code>配置UI</code><br>在右下角选择<code>添加卡片</code><br>在<code>实体</code>里选择<code>switch.light</code><br>完成添加到主页</p>
+<p>最后在iPhone的家庭APP里添加配件，简单配置后即可使用Siri控制开关</p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><blockquote>
+<p>(<a target="_blank" rel="noopener" href="https://www.instructables.com/id/Using-an-Esp8266-Arduino-to-Control-a-Relay-Using-/">https://www.instructables.com/id/Using-an-Esp8266-Arduino-to-Control-a-Relay-Using-/</a>)</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2016 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class=""></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">danfei</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+</body>
+</html>

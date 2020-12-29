@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"danfei.github.io","root":"/","images":"/images","scheme":"Mist","version":"8.1.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+  </script>
+<meta property="og:type" content="website">
+<meta property="og:title" content="填坑笔记">
+<meta property="og:url" content="http://danfei.github.io/page/2/index.html">
+<meta property="og:site_name" content="填坑笔记">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="danfei">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://danfei.github.io/page/2/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>填坑笔记</title>
+  
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="填坑笔记" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">填坑笔记</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+        </section>
+        <!--/noindex-->
+
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="danfei"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">danfei</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">29</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/danfei" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;danfei" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:hack42@qq.com" title="E-Mail → mailto:hack42@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+
+
+
+        </section>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://danfei.github.io/2020/02/28/%E7%94%A8%E6%A0%91%E8%8E%93%E6%B4%BE%E6%90%AD%E5%BB%BA%E7%BE%A4%E6%99%96NVR/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="danfei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="填坑笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/02/28/%E7%94%A8%E6%A0%91%E8%8E%93%E6%B4%BE%E6%90%AD%E5%BB%BA%E7%BE%A4%E6%99%96NVR/" class="post-title-link" itemprop="url">用树莓派搭建群晖NVR</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-02-28 01:37:51" itemprop="dateCreated datePublished" datetime="2020-02-28T01:37:51+08:00">2020-02-28</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-03 05:07:58" itemprop="dateModified" datetime="2020-03-03T05:07:58+08:00">2020-03-03</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>树莓派需要连接摄像头<br>烧写镜像后启动<br>记得将<code>/etc/apt/sources.list</code>文件中<br>默认的源地址<code>http://raspbian.raspberrypi.org/</code><br>替换为<code>http://mirrors.ustc.edu.cn/raspbian/</code><br>在<code>raspi-config</code>上开启shh和摄像头，同时登陆WiFi</p>
+<h1 id="安装motion"><a href="#安装motion" class="headerlink" title="安装motion"></a>安装motion</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install motion</span><br></pre></td></tr></table></figure>
+<h2 id="基本配置"><a href="#基本配置" class="headerlink" title="基本配置"></a>基本配置</h2><p>添加守护进程</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo nano &#x2F;etc&#x2F;default&#x2F;motion</span><br></pre></td></tr></table></figure>
+<p>修改如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">start_motion_daemon&#x3D;yes</span><br></pre></td></tr></table></figure>
+<p>使其允许外部访问</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo nano &#x2F;etc&#x2F;motion&#x2F;motion.conf</span><br></pre></td></tr></table></figure>
+<p>修改如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">stream_localhost off</span><br></pre></td></tr></table></figure>
+<p>启动服务：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo service motion start</span><br></pre></td></tr></table></figure>
+<p>浏览器访问<code>http://xxx.xxx.xxx.xxx:8081</code><br>看到输出画面即为正常</p>
+<h2 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h2><p>会有一些卡顿的情况，需要进一步调整</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo nano &#x2F;etc&#x2F;motion&#x2F;motion.conf</span><br></pre></td></tr></table></figure>
+<p>修改如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">daemon on</span><br><span class="line">framerate 30</span><br><span class="line">ffmpeg_variable_bitrate  2</span><br><span class="line">stream_maxrate  30</span><br><span class="line">stream_quality  100</span><br><span class="line">output_pictures off</span><br><span class="line">ffmpeg_output_movies off</span><br></pre></td></tr></table></figure>
+<p>重新启动之后，画面会流畅很多</p>
+<h1 id="添加到群晖"><a href="#添加到群晖" class="headerlink" title="添加到群晖"></a>添加到群晖</h1><p>在群晖的套件中心安装<code>Surveillance Station</code>并激活<br>添加网络摄像头<br>品牌选择<code>用户自定义</code><br>类型选择<code>串流-HTTP</code><br>路径输入<code>xxx.xxx.xxx.xxx:8081</code><br>测试成功之后，此设备就可以作为监控摄像头使用，视频会自动存储在NAS上</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://danfei.github.io/2020/02/27/%E8%8D%89%E7%BC%B8%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="danfei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="填坑笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/02/27/%E8%8D%89%E7%BC%B8%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">草缸笔记</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-02-27 23:29:05" itemprop="dateCreated datePublished" datetime="2020-02-27T23:29:05+08:00">2020-02-27</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-02-28 10:33:14" itemprop="dateModified" datetime="2020-02-28T10:33:14+08:00">2020-02-28</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="缘由"><a href="#缘由" class="headerlink" title="缘由"></a>缘由</h1><p>差不多是两年前看到了一段视频，非常吸引我<br><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=ZvmGJuquuLE&list=PL2155euLw9DN6EU2zBTlDj8-q572aZv7w&index=6">(Setting Up) NO filter, NO CO2, NO Ferts 5 Gallon Nano Tank</a><br>很想挖这个坑，但直到今天才开始着手，我会在这里记录我的操作</p>
+<h1 id="器材准备"><a href="#器材准备" class="headerlink" title="器材准备"></a>器材准备</h1><ul>
+<li>超白玻鱼缸1个（400mm宽/230mm深/250mm高，厚度4.8mm）</li>
+<li>照明灯1盏（9W，390mm-540mm可调长度，灯珠5730，灯珠数36颗，蓝白光）</li>
+<li>温度计（吸盘式，115mm长，范围0℃~40℃，误差±1℃）</li>
+<li>黄沙（7kg，颗粒直径2mm~5mm）</li>
+<li>种植土（6L，美乐棵通用性营养土）</li>
+</ul>
+<h1 id="操作记录"><a href="#操作记录" class="headerlink" title="操作记录"></a>操作记录</h1><h2 id="2020年2月27日"><a href="#2020年2月27日" class="headerlink" title="2020年2月27日"></a>2020年2月27日</h2><p>晚上收到了快递，把缸体清洗干净，放在了进门的柜子上</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://danfei.github.io/2020/02/25/%E6%90%AD%E5%BB%BA%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="danfei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="填坑笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/02/25/%E6%90%AD%E5%BB%BA%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="post-title-link" itemprop="url">搭建邮件服务器</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-02-25 23:36:31" itemprop="dateCreated datePublished" datetime="2020-02-25T23:36:31+08:00">2020-02-25</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-03 05:06:13" itemprop="dateModified" datetime="2020-03-03T05:06:13+08:00">2020-03-03</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="DNS服务器"><a href="#DNS服务器" class="headerlink" title="DNS服务器"></a>DNS服务器</h2><p>在域名的DNS管理页添加如下记录</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A</td>
+<td>mail</td>
+<td>xxx.xxx.xxx.xxx</td>
+</tr>
+<tr>
+<td>MX</td>
+<td>@</td>
+<td>mail.xxx.com</td>
+</tr>
+</tbody></table>
+<h2 id="公网服务器防火墙"><a href="#公网服务器防火墙" class="headerlink" title="公网服务器防火墙"></a>公网服务器防火墙</h2><p>首先查看防火墙端口状态</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo ufw status</span><br></pre></td></tr></table></figure>
+<p>然后开放如下端口</p>
+<table>
+<thead>
+<tr>
+<th align="left">名称</th>
+<th align="left">协议</th>
+<th align="left">端口号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">SMTP</td>
+<td align="left">TCP</td>
+<td align="left">25</td>
+</tr>
+<tr>
+<td align="left">IMAP</td>
+<td align="left">TCP</td>
+<td align="left">143</td>
+</tr>
+<tr>
+<td align="left">POP3</td>
+<td align="left">TCP</td>
+<td align="left">110</td>
+</tr>
+<tr>
+<td align="left">SMTP-SSL</td>
+<td align="left">TCP</td>
+<td align="left">465</td>
+</tr>
+<tr>
+<td align="left">SMTP-TLS</td>
+<td align="left">TCP</td>
+<td align="left">587</td>
+</tr>
+<tr>
+<td align="left">通过 SSL/TLS 的 IMAP</td>
+<td align="left">TCP</td>
+<td align="left">993</td>
+</tr>
+<tr>
+<td align="left">通过 SSL/TLS 的 POP3</td>
+<td align="left">TCP</td>
+<td align="left">995</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo ufw allow 端口号</span><br></pre></td></tr></table></figure>
+<h2 id="frp"><a href="#frp" class="headerlink" title="frp"></a>frp</h2><p>在公网服务器frps的配置文件<code>frps.ini</code>添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[common]</span><br><span class="line">subdomain_host &#x3D; xxx.com </span><br></pre></td></tr></table></figure>
+<p>在家里的软路由frpc内添加添加对应的远程端口和TCP协议<br>内容与上面的防火墙设置一样<br>此外添加二级域名的代理</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[mail]</span><br><span class="line">type &#x3D; http</span><br><span class="line">local_port &#x3D; 80 </span><br><span class="line">subdomain &#x3D; mail </span><br></pre></td></tr></table></figure>
+<h2 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h2><p>邮件的Web客户端也需要用80端口，但由于公网服务器上Nginx已经占用了80端口<br>所以我们修改Nginx配置，在二级域名mail上让nginx转发80流量到frp的8080端口<br>添加<code>frp.conf</code>，内容如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 80;</span><br><span class="line">    server_name mail.xxx.com;</span><br><span class="line"></span><br><span class="line">    location &#x2F; &#123;</span><br><span class="line">        proxy_pass http:&#x2F;&#x2F;127.0.0.1:8080;</span><br><span class="line">        proxy_set_header    Host            $host:80;</span><br><span class="line">        proxy_set_header    X-Real-IP       $remote_addr;</span><br><span class="line">        proxy_set_header    X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">        proxy_hide_header   X-Powered-By;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">server &#123;</span><br><span class="line">    listen 443 ssl;</span><br><span class="line">    server_name mail.xxx.com;</span><br><span class="line"></span><br><span class="line">    # ssl on;</span><br><span class="line">    ssl_certificate &#x2F;etc&#x2F;letsencrypt&#x2F;live&#x2F;mail.xxx.com&#x2F;fullchain.pem;</span><br><span class="line">    ssl_certificate_key &#x2F;etc&#x2F;letsencrypt&#x2F;live&#x2F;mail.xxx.com&#x2F;privkey.pem;</span><br><span class="line">    ssl_prefer_server_ciphers on;</span><br><span class="line">    ssl_session_timeout 60m;</span><br><span class="line"></span><br><span class="line">    location &#x2F; &#123;</span><br><span class="line">        proxy_pass http:&#x2F;&#x2F;127.0.0.1:8081;</span><br><span class="line">        proxy_set_header    Host            $host:80;</span><br><span class="line">        proxy_set_header    X-Real-IP       $remote_addr;</span><br><span class="line">        proxy_set_header    X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">        proxy_hide_header   X-Powered-By;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="邮件服务器安装"><a href="#邮件服务器安装" class="headerlink" title="邮件服务器安装"></a>邮件服务器安装</h1><p>群晖套件中心安装<code>Mail Server</code><br>启用SMTP，填写主机名<code>xxx.com</code><br>启用SMTP-SSL，启用SMTP-TLS</p>
+<h1 id="测试使用"><a href="#测试使用" class="headerlink" title="测试使用"></a>测试使用</h1><p>群晖套件中心安装<code>Mail Station</code><br>访问地址为<code>http://mail.xxx.com/mail</code><br>使用其他邮箱互发邮件<br>It Works！</p>
+<h1 id="使用群晖MailPlus套件"><a href="#使用群晖MailPlus套件" class="headerlink" title="使用群晖MailPlus套件"></a>使用群晖MailPlus套件</h1><p>此软件免费授权只有5个帐号<br>胜在Web端UI精致，还有APP供选择<br>改用此套件，服务器端设置基本相同<br>需要注意的是</p>
+<h2 id="DSM设置"><a href="#DSM设置" class="headerlink" title="DSM设置"></a>DSM设置</h2><p>Web客户端访问地址需要打开<br>在<code>控制面板</code>中打开<code>应用程序门户</code><br>选择<code>MailPlus</code>，启用自定义别名<code>mail</code>，就可以通过如下地址直接访问<br><code>https://xxx.xxx.xxx.xxx/mail</code></p>
+<h2 id="frpc修改"><a href="#frpc修改" class="headerlink" title="frpc修改"></a>frpc修改</h2><p>修改二级域名mail的参数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[mail]</span><br><span class="line">type &#x3D; http</span><br><span class="line">local_port &#x3D; 5000 </span><br><span class="line">subdomain &#x3D; mail</span><br></pre></td></tr></table></figure>
+<h2 id="Nginx-1"><a href="#Nginx-1" class="headerlink" title="Nginx"></a>Nginx</h2><p>将<code>mail.xxx.com</code>的地址重定向到<code>mail.xxx.com/mail</code>便于访问</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line"></span><br><span class="line">    listen 80;</span><br><span class="line">    server_name mail.hack42.com;</span><br><span class="line"></span><br><span class="line">    location &#x2F; &#123;</span><br><span class="line">        proxy_pass http:&#x2F;&#x2F;127.0.0.1:8080;</span><br><span class="line">        proxy_set_header    Host            $host:80;</span><br><span class="line">        proxy_set_header    X-Real-IP       $remote_addr;</span><br><span class="line">        proxy_set_header    X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">        proxy_hide_header   X-Powered-By;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">server &#123;</span><br><span class="line">    listen 443 ssl;</span><br><span class="line">    server_name mail.hack42.com;</span><br><span class="line"></span><br><span class="line">    if ($host &#x3D; &#39;mail.hack42.com&#39; ) &#123;</span><br><span class="line">     rewrite ^&#x2F;(.*)$ http:&#x2F;&#x2F;mail.hack42.com&#x2F;mail;</span><br><span class="line">        &#125;</span><br><span class="line">    # ssl on;</span><br><span class="line">    ssl_certificate &#x2F;etc&#x2F;letsencrypt&#x2F;live&#x2F;mail.hack42.com&#x2F;fullchain.pem; # managed by Certbot</span><br><span class="line">    ssl_certificate_key &#x2F;etc&#x2F;letsencrypt&#x2F;live&#x2F;mail.hack42.com&#x2F;privkey.pem; # managed by Certbot</span><br><span class="line">    ssl_prefer_server_ciphers on;</span><br><span class="line">    ssl_session_timeout 60m;</span><br><span class="line"></span><br><span class="line">    location &#x2F; &#123;</span><br><span class="line">        proxy_pass http:&#x2F;&#x2F;127.0.0.1:8080;</span><br><span class="line">        proxy_set_header    Host            $host:80;</span><br><span class="line">        proxy_set_header    X-Real-IP       $remote_addr;</span><br><span class="line">        proxy_set_header    X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">        proxy_hide_header   X-Powered-By;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>此外，记得签发二级域名的证书</p>
+<p>访问地址为<code>http://mail.xxx.com/</code><br>It Works！</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://danfei.github.io/2020/02/24/frp%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="danfei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="填坑笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/02/24/frp%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">frp笔记</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-02-24 16:42:15" itemprop="dateCreated datePublished" datetime="2020-02-24T16:42:15+08:00">2020-02-24</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-03 05:28:56" itemprop="dateModified" datetime="2020-03-03T05:28:56+08:00">2020-03-03</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>经常需要开放Docker或是虚拟机部署的服务到互联网<br>就会用到内网穿透的反向代理</p>
+<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><ul>
+<li>客户端与服务器端版本号对齐</li>
+<li>启动时注意权限</li>
+</ul>
+<h1 id="以minetest为例"><a href="#以minetest为例" class="headerlink" title="以minetest为例"></a>以minetest为例</h1><h2 id="服务器端"><a href="#服务器端" class="headerlink" title="服务器端"></a>服务器端</h2><p>下载并解压<br><a target="_blank" rel="noopener" href="https://github.com/fatedier/frp/releases">https://github.com/fatedier/frp/releases</a><br>编辑配置文件<code>frps.ini</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[common]</span><br><span class="line">bind_port &#x3D; 7000</span><br><span class="line">vhost_http_port &#x3D; 8080</span><br><span class="line">vhost_https_port &#x3D; 8081</span><br><span class="line">token &#x3D; r6aJRnN8cGyYMmb7A</span><br><span class="line"></span><br><span class="line">dashboard_port &#x3D; 7500</span><br><span class="line">dashboard_user &#x3D; username</span><br><span class="line">dashboard_pwd &#x3D; password</span><br></pre></td></tr></table></figure>
+<ul>
+<li>token需要和客户端匹配<br>启动服务<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo .&#x2F;frps -c frps.ini</span><br></pre></td></tr></table></figure>
+客户端</li>
+</ul>
+<hr>
+<p>客户端我用的是OpenWrt软件库里的frpc<br>是web界面的配置方法，其实也就是配置了<code>frpc.ini</code><br>全局设置</p>
+<ul>
+<li>服务器地址</li>
+<li>服务器端口7000</li>
+<li>令牌r6aJRnN8cGyYMmb7A<br>因为minetest是使用本地30000端口进行udp通讯的<br>所以frpc上添加了一项服务</li>
+<li>服务名称minetest</li>
+<li>服务协议udp</li>
+<li>远程端口 30000</li>
+<li>内网主机192.168.1.110</li>
+<li>内网主机端口30000</li>
+</ul>
+<p><code>frpc.ini</code>近似配置文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[common]</span><br><span class="line">server_addr &#x3D; 服务器地址</span><br><span class="line">server_port &#x3D; 7000</span><br><span class="line">token &#x3D; r6aJRnN8cGyYMmb7A</span><br><span class="line"></span><br><span class="line">[minetest]</span><br><span class="line">type &#x3D; udp</span><br><span class="line">local_ip &#x3D; 192.168.1.110</span><br><span class="line">local_port &#x3D; 30000</span><br><span class="line">remote_port &#x3D; 30000</span><br></pre></td></tr></table></figure>
+<p>工作状态也可以通过服务器的7500端口查看<code>dashboard</code>确认</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://danfei.github.io/2020/02/23/NAS%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="danfei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="填坑笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/02/23/NAS%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">NAS笔记</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-02-23 10:22:15" itemprop="dateCreated datePublished" datetime="2020-02-23T10:22:15+08:00">2020-02-23</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-04 16:01:21" itemprop="dateModified" datetime="2020-03-04T16:01:21+08:00">2020-03-04</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="硬件选择工作"><a href="#硬件选择工作" class="headerlink" title="硬件选择工作"></a>硬件选择工作</h1><h2 id="NAS选择"><a href="#NAS选择" class="headerlink" title="NAS选择"></a>NAS选择</h2><p>选择群晖主要是为了易用和稳定，毕竟是用来备份资料的设备<br>个人认为群晖适合家用的两个型号:两盘位的<code>DS218+</code>和四盘位的<code>DS918+</code><br>plus系列最大特点是支持Docker，这个很重要<br>需要体积小巧就选前者，需要海量存储就选择后者<br>我购买的是DS218+</p>
+<h2 id="加装内存"><a href="#加装内存" class="headerlink" title="加装内存"></a>加装内存</h2><p>为了更好地使用Docker，务必选择加装内存，当然过大也没啥用<br>注意是低电压版本的<code>DDR3L 1866</code>的内存<br>我购买的是8GB容量</p>
+<h2 id="硬盘选择"><a href="#硬盘选择" class="headerlink" title="硬盘选择"></a>硬盘选择</h2><p>硬盘有NAS专用盘<br>容量方面可以参考单位容量单价比较<br>即用该<code>硬盘总价/硬盘容量</code><br>可以做出性价比不错的选择<br>我购买的是希捷的4TB*2</p>
+<h2 id="UPS选择"><a href="#UPS选择" class="headerlink" title="UPS选择"></a>UPS选择</h2><p>虽然有各类保护，但突然掉电对硬盘还是有一定影响<br>购买UPS可以避免这一点<br>小型的UPS不占地方，大约能提供几十分钟的电力支援<br>我购买的是<code>APC施耐德BK650-CH(400W/650VA)</code></p>
+<h2 id="其他设备"><a href="#其他设备" class="headerlink" title="其他设备"></a>其他设备</h2><ul>
+<li>配合电视机，可以购买支持DLNA播放的视频盒子，Apple TV、小米盒子或者Raspberry Pi刷了OSMC都可以</li>
+<li>尽管群晖也可以来做软路由，我还是倾向于有一块OpenWrt无线路由，ASUS RT-AC88U之类</li>
+<li>可以买99元的花生棒做内网穿透，便于更灵活的使用</li>
+<li>防尘问题可以将机器拆开，在风扇处加装防尘网，并把风扇反置</li>
+</ul>
+<h1 id="软件选择"><a href="#软件选择" class="headerlink" title="软件选择"></a>软件选择</h1><h2 id="照片备份"><a href="#照片备份" class="headerlink" title="照片备份"></a>照片备份</h2><p>套件中心中启用<code>Moments</code>，手机上安装Moments APP<br>家中每人可以用各自的帐号备份自己设备的照片<br>同时将部分照片共享出来，建立共享照片库</p>
+<h2 id="影音下载"><a href="#影音下载" class="headerlink" title="影音下载"></a>影音下载</h2><p>在Docker中注册表搜索<code>oldiy/rrshare64</code><br>把映像建立容器，配置下载路径后即可使用<br>它提供海量的人人影视翻译的视频下载，不用到处找资源</p>
+<h2 id="媒体中心"><a href="#媒体中心" class="headerlink" title="媒体中心"></a>媒体中心</h2><p>套件中心中启用<code>Plex Media Server</code><br>下载后的视频移动到对应目录就可以自动扫描出影片信息<br>注意放置的位置<br>电影<br><code>/Media/Movies/Apollo.11/Apollo.11.mp4</code><br>电视剧<br><code>/Media/TV Shows/Better.Call.Saul/Season 01/Better.Call.Saul.S01E01.mp4</code><br>移动端推荐使用Plex APP或是VLC APP<br>电视机连接媒体盒子后，可以直接搜索出DLNA设备播放</p>
+<h2 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h2><p>在Docker Hub海量资源有很多可以探索的<br>我使用<code>linuxserver/minetest</code>搭建了minetest游戏服务器<br>配合路由上的frps做内网穿透，让我社区的朋友可以一起游玩<br>因为负载不大，所以还算流畅</p>
+<h2 id="Virtual-Machine-Manager"><a href="#Virtual-Machine-Manager" class="headerlink" title="Virtual Machine Manager"></a>Virtual Machine Manager</h2><p>在<code>Virtual Machine Manager</code>可以创建需要的虚拟机<br>我在上面建立过魔兽世界3.3.5版本的<code>TrinityCore</code>服务器，但是在线三个人就开始卡顿<br>如果服务器性能再强一些，支持五人在线游戏就不错</p>
+<h2 id="同步与备份"><a href="#同步与备份" class="headerlink" title="同步与备份"></a>同步与备份</h2><p>安装<code>Synology Drive</code>的客户端来同步PC上的文件到服务器<br>使用<code>Snapshot Replication</code>来建立备份快照<br>如果你有两台群晖，或者花了300元买到了星际蜗牛<br>你还可以运行<code>Hyper Backup</code>做异地备份，充分保护你的数据安全</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://danfei.github.io/2020/02/22/Hexo%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="danfei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="填坑笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/02/22/Hexo%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">Hexo笔记</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-02-22 15:33:41" itemprop="dateCreated datePublished" datetime="2020-02-22T15:33:41+08:00">2020-02-22</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-03 05:25:08" itemprop="dateModified" datetime="2020-03-03T05:25:08+08:00">2020-03-03</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>安装nodejs和hexo</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install nodejs</span><br><span class="line">$ sudo npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>其他就是配置github帐号等等</p>
+<p>初始化</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
+<p>如果是是用新的电脑写作，记得保存如下文件/文件夹</p>
+<ul>
+<li>_config.yml</li>
+<li>source</li>
+<li>themes</li>
+</ul>
+<h1 id="修改配置文档"><a href="#修改配置文档" class="headerlink" title="修改配置文档"></a>修改配置文档</h1><p>网站的配置文档在<code>/_config.yml</code><br>主题的配置文件在<code>/themes/_config.yml</code><br>文件内都有详细的修改说明<br>如果需要在文章内配图，可以修改网站配置文档的<code>post_asset_folder</code>参数<br>这样可以在<code>source/_posts</code>内随文章建立同名的文件夹<br>文章内可直接引用链接地址“文章名/文件名”</p>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>文章写作时注意Markdown语法<br>新建文章</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new ‘文章名’</span><br></pre></td></tr></table></figure>
+<p>生成静态文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
+<p>本地预览</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+<p>更新部署</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://danfei.github.io/2020/02/21/Vultr%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="danfei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="填坑笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/02/21/Vultr%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">Vultr笔记</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-02-21 14:24:13" itemprop="dateCreated datePublished" datetime="2020-02-21T14:24:13+08:00">2020-02-21</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-03 05:17:55" itemprop="dateModified" datetime="2020-03-03T05:17:55+08:00">2020-03-03</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="部署实例"><a href="#部署实例" class="headerlink" title="部署实例"></a>部署实例</h1><p>需要注意的地方有</p>
+<ul>
+<li>创建后测试服务器ip，注意是否屏蔽、延迟及丢包率</li>
+<li>以上三项达不到要求就重新部署新的服务器</li>
+<li>创建新的之后再销毁旧的，否则有可能获得相同的ip</li>
+</ul>
+<h1 id="创建用户"><a href="#创建用户" class="headerlink" title="创建用户"></a>创建用户</h1><p>我使用的是Ubuntu18.04，后台提供了root密码<br>putty登陆后，先创建用户</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># adduser username</span><br></pre></td></tr></table></figure>
+<p>然后添加权限</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># nano &#x2F;etc&#x2F;sudoers</span><br></pre></td></tr></table></figure>
+<p>增加一行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">username ALL&#x3D;(ALL：ALL) ALL</span><br></pre></td></tr></table></figure>
+<h1 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h1><p>方便起见，可以在Godaddy上买个域名<br>在域名的DNS设置页面将A记录指向服务器ip</p>
+<h1 id="添加证书"><a href="#添加证书" class="headerlink" title="添加证书"></a>添加证书</h1><p>使用<code>certbot</code>申请let’s encrypt证书</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install certbot python-certbot-nginx</span><br><span class="line">$ sudo certbot --nginx</span><br></pre></td></tr></table></figure>
+<p>证书到期后续约</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo certbot renew –dry-run</span><br></pre></td></tr></table></figure>
+<p>编辑nginx配置，将http重定向到https</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo nano &#x2F;etc&#x2F;nginx&#x2F;conf.d&#x2F;http.conf</span><br></pre></td></tr></table></figure>
+<p>内容如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">  listen 80;</span><br><span class="line">  server_name example.com www.example.com;</span><br><span class="line">  return 301 https:&#x2F;&#x2F;example.com$request_uri;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>https相关配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo nano &#x2F;etc&#x2F;nginx&#x2F;conf.d&#x2F;https.conf</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 443 ssl;</span><br><span class="line">    server_name example.com www.example.com;</span><br><span class="line">    ssl_certificate      &#x2F;etc&#x2F;letsencrypt&#x2F;live&#x2F;xxx.com&#x2F;fullchain.pem;</span><br><span class="line">    ssl_certificate_key  &#x2F;etc&#x2F;letsencrypt&#x2F;live&#x2F;xxx.com&#x2F;privkey.pem;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>重启nginx即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo server nginx restart</span><br></pre></td></tr></table></figure>
+<h1 id="CDN加速"><a href="#CDN加速" class="headerlink" title="CDN加速"></a>CDN加速</h1><ol>
+<li>在Cloudflare注册并添加域名</li>
+<li>在Godaddy上修改Nameservers</li>
+<li>开启Always use HTTPS<br>至此，测试网站的延迟从100ms左右下降到了60ms左右</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://danfei.github.io/2018/05/12/ArduinoMicro%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="danfei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="填坑笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2018/05/12/ArduinoMicro%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">Arduino Micro笔记</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2018-05-12 21:57:00" itemprop="dateCreated datePublished" datetime="2018-05-12T21:57:00+08:00">2018-05-12</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-03 12:43:14" itemprop="dateModified" datetime="2020-03-03T12:43:14+08:00">2020-03-03</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>Uno的pin2和pin3是interrupt 0和1<br>基于32u4的刚好反过来<br>pin2和pin3是interrupt 1和0<br>瞎忙活半天</p>
+<blockquote>
+<p>参考<br><a target="_blank" rel="noopener" href="https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/">https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/</a></p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://danfei.github.io/2017/09/10/Django%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="danfei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="填坑笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2017/09/10/Django%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">Django笔记</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2017-09-10 16:53:38" itemprop="dateCreated datePublished" datetime="2017-09-10T16:53:38+08:00">2017-09-10</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-03 05:30:30" itemprop="dateModified" datetime="2020-03-03T05:30:30+08:00">2020-03-03</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="It-worked！"><a href="#It-worked！" class="headerlink" title="It worked！"></a>It worked！</h1><p>安装pip</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sudo apt-get install python3-pip</span><br></pre></td></tr></table></figure>
+<p>安装虚拟机环境</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sudo apt-get install virtualenv</span><br></pre></td></tr></table></figure>
+<p>创建虚拟机环境并启动</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$virtualenv VENV</span><br><span class="line">$source VENV&#x2F;bin&#x2F;activate</span><br></pre></td></tr></table></figure>
+<p>安装Django</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(VENV)$pip install django</span><br></pre></td></tr></table></figure>
+<p>新建一个项目</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(VENV)$django-admin startproject iot</span><br></pre></td></tr></table></figure>
+<p>进入项目并修改配置文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(VENV)$cd iot</span><br><span class="line">(VENV)$nano iot&#x2F;settings.py</span><br></pre></td></tr></table></figure>
+<p>添加允许访问位置和修改时区设置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALLOWED_HOSTS &#x3D; [&quot;192.168.1.128&quot;,&quot;localhost&quot;]</span><br><span class="line">TIME_ZONE &#x3D; &#39;Asia&#x2F;Shanghai&#39;</span><br></pre></td></tr></table></figure>
+<p>测试运行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(VENV)$python manage.py runserver localhost:8000</span><br></pre></td></tr></table></figure>
+<h1 id="定时任务"><a href="#定时任务" class="headerlink" title="定时任务"></a>定时任务</h1><p>修改配置文件<code>setting.py</code><br>在<code>INSTALLED_APPS</code>中加入<br><code>django_crontab</code><br>文件中加入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">CRONJOBS &#x3D; [</span><br><span class="line">	(&#39;*&#x2F;1 * * * *&#39;, &#39;power.cron.poweron&#39;, &#39;&gt;&gt;&#x2F;tmp&#x2F;job.log&#39;),</span><br><span class="line">]</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br><span class="line">在power目录下创建cron.py文件</span><br><span class="line">&#123;% codeblock %&#125;</span><br><span class="line">from .models import Power</span><br><span class="line"></span><br><span class="line">def poweron():</span><br><span class="line">	#here</span><br></pre></td></tr></table></figure>
+<p>任务加载<br><code>python manage.py crontab add</code><br>移除所有的任务<br><code>python manage.py crontab remove</code><br>修改后再次运行<br><code>python manage.py crontab add</code><br>查看当前运行中的任务<br><code>python manage.py crontab show</code></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://danfei.github.io/2017/04/07/Raspberrypi%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="danfei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="填坑笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2017/04/07/Raspberrypi%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">Raspberry Pi 笔记</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2017-04-07 10:44:22" itemprop="dateCreated datePublished" datetime="2017-04-07T10:44:22+08:00">2017-04-07</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-03 05:15:41" itemprop="dateModified" datetime="2020-03-03T05:15:41+08:00">2020-03-03</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="编译内核"><a href="#编译内核" class="headerlink" title="编译内核"></a>编译内核</h1><p>获取Kernel</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$git clone --depth&#x3D;1 https:&#x2F;&#x2F;github.com&#x2F;raspberrypi&#x2F;linux</span><br></pre></td></tr></table></figure>
+<p>获取交叉编译工具</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sudo apt-get install gcc-arm-linux-gnueabihf</span><br></pre></td></tr></table></figure>
+<p>进入目录设定编译选项</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$cd linux</span><br><span class="line">$make -j4 ARCH&#x3D;arm CROSS_COMPILE&#x3D;arm-linux-gnueabihf- bcm2709_defconfig</span><br></pre></td></tr></table></figure>
+<p>参数<code>bcm2709_defconfig</code>是Raspberry Pi2/3代，1代使用<code>bcmrpi_defconfig</code><br>j4是使用4核心来编译，建议改为核心数的1.5倍<br>然后开始编译</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$make -j4 ARCH&#x3D;arm CROSS_COMPILE&#x3D;arm-linux-gnueabihf- zImage modules dtbs</span><br></pre></td></tr></table></figure>
+<p>编译需要一段时间<br>完成之后插入烧写好raspbian系统的TF卡，安装modules</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sudo make ARCH&#x3D;arm CROSS_COMPILE&#x3D;arm-linux-gnueabihf- INSTALL_MOD_PATH&#x3D;&#x2F;media&#x2F;dan&#x2F;7f593562-9f68-4bb9-a7c9-2b70ad620873&#x2F; modules_install</span><br></pre></td></tr></table></figure>
+<p><code>INSTALL_MOD_PATH</code>后面的路径改为本机路径<br>可以选择覆盖掉原来的Kernel或者放置多个kernel以便切换<br>然后拷贝<code>Kernel</code>和<code>Device Tree blobs</code>到TF卡</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$sudo cp arch&#x2F;arm&#x2F;boot&#x2F;zImage &#x2F;media&#x2F;dan&#x2F;boot&#x2F;kernel-new.img</span><br><span class="line">$sudo cp arch&#x2F;arm&#x2F;boot&#x2F;dts&#x2F;*.dtb &#x2F;media&#x2F;dan&#x2F;boot&#x2F;</span><br><span class="line">$sudo cp arch&#x2F;arm&#x2F;boot&#x2F;dts&#x2F;overlays&#x2F;*.dtb* &#x2F;media&#x2F;dan&#x2F;boot&#x2F;overlays&#x2F;</span><br><span class="line">$sudo cp arch&#x2F;arm&#x2F;boot&#x2F;dts&#x2F;overlays&#x2F;README &#x2F;media&#x2F;dan&#x2F;boot&#x2F;overlays&#x2F;</span><br></pre></td></tr></table></figure>
+<p>如果没有覆盖Kernel的话，还需要编辑<code>/boot/config.txt</code>加上</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kernel&#x3D;kernel-new.img</span><br></pre></td></tr></table></figure>
+<p>编译就完成了</p>
+<h1 id="更换logo和启动画面"><a href="#更换logo和启动画面" class="headerlink" title="更换logo和启动画面"></a>更换logo和启动画面</h1><h2 id="logo"><a href="#logo" class="headerlink" title="logo"></a>logo</h2><p>安装图形工具<code>netpbm</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sudo apt-get install -y netpbm</span><br></pre></td></tr></table></figure>
+<p>准备一张63×80像素用于替换的logo.jpg<br>然后生成<code>logo_linux_clut224.ppm</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$cd ~&#x2F;linux&#x2F;drivers&#x2F;video&#x2F;logo</span><br><span class="line">$jpegtopnm logo.jpg &gt;logo.ppm</span><br><span class="line">$ppmquant 224 logo.ppm &gt;logo_224.tmp</span><br><span class="line">$pnmnoraw logo_224.tmp &gt; logo_linux_clut224.ppm</span><br></pre></td></tr></table></figure>
+<p>在交叉编译之前，确保开机logo是224色设置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make -j4 ARCH&#x3D;arm CROSS_COMPILE&#x3D;arm-linux-gnueabihf- menuconfig</span><br></pre></td></tr></table></figure>
+<p>位置在</p>
+<blockquote>
+<ol>
+<li>Device Drivers —&gt;</li>
+<li>Graphics support —&gt;</li>
+<li>[*] Bootup logo —&gt;</li>
+<li>— Bootup logo<br>[ ] Standard black and white Linux logo<br>[ ] Standard 16-color Linux logo<br>[*] Standard 224-color Linux logo</li>
+</ol>
+</blockquote>
+<p>后续开始编译，步骤同上</p>
+<h2 id="启动画面"><a href="#启动画面" class="headerlink" title="启动画面"></a>启动画面</h2><p>安装看图工具<code>fbi</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sudo apt-get install fbi</span><br></pre></td></tr></table></figure>
+<p>拷贝图片并保存到<code>/etc/splash.jpg</code><br>在TF卡的<code>/etc/init.d/</code>下创建新脚本<code>asplashscreen</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sudo nano &#x2F;etc&#x2F;init.d&#x2F;asplashscreen</span><br></pre></td></tr></table></figure>
+<p>内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">#! &#x2F;bin&#x2F;sh</span><br><span class="line">### BEGIN INIT INFO</span><br><span class="line"># Provides:          asplashscreen</span><br><span class="line"># Required-Start:</span><br><span class="line"># Required-Stop:</span><br><span class="line"># Should-Start:      </span><br><span class="line"># Default-Start:     S</span><br><span class="line"># Default-Stop:</span><br><span class="line"># Short-Description: Show custom splashscreen</span><br><span class="line"># Description:       Show custom splashscreen</span><br><span class="line">### END INIT INFO</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">do_start () &#123;</span><br><span class="line"></span><br><span class="line">    &#x2F;usr&#x2F;bin&#x2F;fbi -T 1 -noverbose -a &#x2F;etc&#x2F;splash.jpg</span><br><span class="line">    exit 0</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">case &quot;$1&quot; in</span><br><span class="line">  start|&quot;&quot;)</span><br><span class="line">    do_start</span><br><span class="line">    ;;</span><br><span class="line">  restart|reload|force-reload)</span><br><span class="line">    echo &quot;Error: argument &#39;$1&#39; not supported&quot; &gt;&amp;2</span><br><span class="line">    exit 3</span><br><span class="line">    ;;</span><br><span class="line">  stop)</span><br><span class="line">    # No-op</span><br><span class="line">    ;;</span><br><span class="line">  status)</span><br><span class="line">    exit 0</span><br><span class="line">    ;;</span><br><span class="line">  *)</span><br><span class="line">    echo &quot;Usage: asplashscreen [start|stop]&quot; &gt;&amp;2</span><br><span class="line">    exit 3</span><br><span class="line">    ;;</span><br><span class="line">esac</span><br><span class="line"></span><br><span class="line">:</span><br></pre></td></tr></table></figure>
+<p>保存之后，设置文件执行属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sudo chmod a+x &#x2F;etc&#x2F;init.d&#x2F;asplashscreen</span><br></pre></td></tr></table></figure>
+<p>最后将脚本加入服务</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sudo insserv &#x2F;etc&#x2F;init.d&#x2F;asplashscreen</span><br></pre></td></tr></table></figure>
+<p>结束</p>
+<h1 id="屏蔽开机信息"><a href="#屏蔽开机信息" class="headerlink" title="屏蔽开机信息"></a>屏蔽开机信息</h1><p>打开<code>/boot/cmdline.txt</code><br>修改<code>console=tty1</code> 为 <code>console=tty3</code><br>结尾增改为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">logo.nologo loglevel&#x3D;3 vt.global_cursor_default&#x3D;0</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2016 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class=""></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">danfei</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+</body>
+</html>
